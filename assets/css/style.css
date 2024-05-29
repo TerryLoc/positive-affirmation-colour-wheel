@@ -1,0 +1,30 @@
+:root {
+  --font-color: #fbf4e6;
+  --bg-color: #789ab6;
+  --transparent-bg: #03030327;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: var(--transparent-bg);
+}
