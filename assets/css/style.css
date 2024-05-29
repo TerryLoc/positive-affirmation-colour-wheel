@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
   --font-color: #fbf4e6;
   --bg-color: #789ab6;
   --transparent-bg: #03030327;
 }
 
+/* generic styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .logo {
@@ -16,15 +21,79 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
+  min-height: 100vh;
 }
 
+/* Header style */
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 10%;
   background-color: var(--transparent-bg);
+}
+/*main style */
+main {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+.container {
+  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container p {
+  width: 100%;
+  font-size: 1rem;
+  text-align: justify;
+  background-color: var(--transparent-bg);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.503);
+}
+
+/* footer style */
+footer {
+  width: 100%;
+  max-height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--transparent-bg);
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 1.2rem;
 }
