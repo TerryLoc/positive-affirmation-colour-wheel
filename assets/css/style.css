@@ -89,7 +89,8 @@ main {
   transition: box-shadow 0.2s ease;
 }
 
-#start-btn:hover {
+#start-btn:hover,
+.mood-btn:hover {
   background-color: var(--font-color);
   color: var(--bg-color);
   box-shadow: 0 0 25px var(--font-color);
