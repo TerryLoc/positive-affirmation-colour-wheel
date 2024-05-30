@@ -53,7 +53,7 @@ function applyColors(colors) {
 
   // Create the gradient string by mapping over the colors array and joining them together
   const gradient = colors
-    .map((color, index) => `${color} ${index * 30}deg ${(index + 1) * 30}deg`)
+    .map((color, index) => `${color} ${index * 60}deg ${(index + 1) * 60}deg`)
     .join(',');
 
   // Set the background style of the colour wheel to the conic gradient
