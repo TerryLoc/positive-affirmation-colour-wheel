@@ -62,21 +62,27 @@ main {
 }
 
 .container p {
+  --br-x: 30px;
+  --br-y: 30px;
+  border-top-right-radius: var(--br-x) var(--br-y);
+  border-top-left-radius: var(--br-x) var(--br-y);
   width: 100%;
   font-size: 1rem;
   text-align: center;
   background-color: var(--transparent-bg);
   padding: 15px;
-  border-radius: 10px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.503);
 }
 
 #start-btn {
+  --br-x: 20px;
+  --br-y: 20px;
+  border-bottom-right-radius: var(--br-x) var(--br-y);
+  border-bottom-left-radius: var(--br-x) var(--br-y);
   padding: 10px 20px;
   background-color: var(--transparent-bg);
   color: var(--font-color);
   border: 2px solid var(--font-color);
-  border-radius: 10px;
   font-size: 1.2rem;
   cursor: pointer;
   margin: 30px 0;
