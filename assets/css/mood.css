@@ -11,6 +11,7 @@
   border: 3px solid var(--font-color);
   border-radius: 50%;
   margin-top: 40px;
+  background-color: var(--transparent-bg);
 }
 
 .spin {
