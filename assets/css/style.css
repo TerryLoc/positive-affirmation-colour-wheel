@@ -98,7 +98,8 @@ main {
   box-shadow: 0 0 25px var(--font-color);
 }
 
-#start-btn:active {
+#start-btn:active,
+.onwards:active {
   transform: scale(0.95);
 }
 

@@ -5,12 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const startBtn = document.getElementById('start-btn');
   const moodButtons = document.querySelectorAll('.mood-btn');
   const colourWheel = document.getElementById('colourWheel1');
+  const onwardsBtn = document.getElementById('onwardsBtn');
 
   // Add event listener to the start button
   if (startBtn) {
     startBtn.addEventListener('click', function () {
       // Redirect to the mood page
       window.location.href = 'mood.html';
+    });
+  } else if (onwardsBtn) {
+    // Add event listener to the onwards button if the start button is not available
+    onwardsBtn.addEventListener('click', function () {
+      // Redirect to the affirmation page
+      window.location.href = 'affirmation.html';
     });
   }
 
