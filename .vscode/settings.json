@@ -15,5 +15,5 @@
   "files.autoSave": "onWindowChange",
   "workbench.colorTheme": "One Monokai",
   "terminal.integrated.gpuAcceleration": "canvas",
-  "liveServer.settings.port": 5507
+  "liveServer.settings.port": 5508
 }

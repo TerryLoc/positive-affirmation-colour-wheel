@@ -48,11 +48,17 @@ document.addEventListener('DOMContentLoaded', function () {
               const randomColorName = randomEntry[0];
               const randomColor = randomEntry[1];
 
-              console.log(randomColorName, randomColor);
-
+              // Change the background color of the colour wheel to the randomly selected color
               colourWheel.classList.remove('spin');
               colourWheel.style.background = randomColor;
-            }, 2000);
+
+              //store the random color name and color in local storage
+              localStorage.setItem('colorName', randomColorName);
+              localStorage.setItem('color', randomColor);
+
+              // Call the function here
+              randomMoodColour();
+            }, 8000);
           })
           // Log an error if the JSON file can't be fetched
           .catch((error) =>
@@ -79,4 +85,12 @@ function applyColors(moodColors) {
 
   // Set the background style of the colour wheel to the conic gradient
   colourWheel1.style.background = `conic-gradient(${gradient})`;
+}
+
+function randomMoodColour() {
+  const colorName = localStorage.getItem('colorName');
+  const color = localStorage.getItem('color');
+  const colourChoice = document.getElementById('colourChoice');
+
+  colourChoice.textContent = `You have chosen the ${colorName} colour, ${color}!`;
 }
