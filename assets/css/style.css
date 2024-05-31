@@ -74,7 +74,8 @@ main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#start-btn {
+#start-btn,
+.onwards {
   --br-x: 20px;
   --br-y: 20px;
   border-bottom-right-radius: var(--br-x) var(--br-y);
@@ -90,7 +91,8 @@ main {
 }
 
 #start-btn:hover,
-.mood-btn:hover {
+.mood-btn:hover,
+.onwards:hover {
   background-color: var(--font-color);
   color: var(--bg-color);
   box-shadow: 0 0 25px var(--font-color);

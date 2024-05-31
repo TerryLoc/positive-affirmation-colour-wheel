@@ -1,34 +1,50 @@
 {
-  "Anxious": ["#B0C4DE", "#E6E6FA", "#AFEEEE", "#E0FFFF", "#F5FFFA", "#FFFFE0"],
-  "Overwhelmed": [
-    "#708090",
-    "#98FF98",
-    "#AFEEEE",
-    "#F8BFD8",
-    "#F5F5DC",
-    "#F08080"
-  ],
-  "Angry": [
-    "#FF3737",
-    "#FF0000",
-    "#FF69B4",
-    "#FF8C00",
-    "#FFA500",
-    "#FF6600",
-    "#FF2E00",
-    "#C90000",
-    "#FF1A1A",
-    "#FF5417",
-    "#FF3500",
-    "#FF2800"
-  ],
-  "Stressed": [
-    "#FFC217",
-    "#FF9900",
-    "#F7DC6F",
-    "#FFb500",
-    "#FFE000",
-    "#FFF400"
-  ],
-  "Sad": ["#483D", "#4B0082", "#ADD8E6", "#E6E6FA", "#A9A9A9", "#008080"]
+  "Anxious": {
+    "Light Steel Blue": "#B0C4DE",
+    "Windows Blue": "#E6E6FA",
+    "Light Sky Blue": "#AFEEEE",
+    "Cream": "#E0FFFF",
+    "Misty Rose": "#F5FFFA",
+    "Light Yellow": "#FFFFE0"
+  },
+  "Overwhelmed": {
+    "Slate Gray": "#708090",
+    "Lime Green": "#98FF98",
+    "Light Sky Blue": "#AFEEEE",
+    "Pinkish Beige": "#F8BFD8",
+    "Light Gray": "#F5F5DC",
+    "Fire Engine Red": "#F08080"
+  },
+  "Angry": {
+    "Fire Engine Red": "#FF3737",
+    "Red": "#FF0000",
+    "Hot Pink": "#FF69B4",
+    "Orange": "#FF8C00",
+    "Golden Amber": "#FFA500",
+    "Burnt Orange": "#FF6600"
+  },
+  "Stressed": {
+    "Golden Amber": "#FFC217",
+    "Dark Orange": "#FF9900",
+    "Mustard Yellow": "#F7DC6F",
+    "Golden Brown": "#FFb500",
+    "Bright Yellow": "#FFE000",
+    "Butter Yellow": "#FFF400"
+  },
+  "Sad": {
+    "Navy Blue": "#483D8B",
+    "Indigo Dye": "#4B0082",
+    "Pale Turquoise": "#ADD8E6",
+    "Windows Blue": "#E6E6FA",
+    "Dim Gray": "#A9A9A9",
+    "Lime Green": "#008080"
+  },
+  "Empty": {
+    "Golden Yellow": "#FFD700",
+    "Orange-Red": "#FF7F50",
+    "Sea Green": "#40E0D0",
+    "Peachy Keen": "#FFDAB9",
+    "Windows Blue": "#E6E6FA",
+    "Lime Green": "#90EE90"
+  }
 }
