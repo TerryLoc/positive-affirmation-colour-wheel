@@ -38,10 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add the spin class to the colour wheel to animate it
             colourWheel.classList.add('spin');
-            // Remove the spin class after 8 seconds
+            // Remove the spin class after 8 seconds and change the colour of the wheel to the randomly selected colour
             setTimeout(() => {
+              const colors = Object.values(colours[mood]);
+              const randomColor = colors[Math.floor(Math.random() * 6)];
+
               colourWheel.classList.remove('spin');
-            }, 8000);
+              colourWheel.style.background = randomColor;
+            }, 2000);
           })
           // Log an error if the JSON file can't be fetched
           .catch((error) =>
