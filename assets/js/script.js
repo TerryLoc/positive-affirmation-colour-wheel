@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
           .then((colours) => {
             // Get the mood from the clicked button's data-mood attribute
             const mood = button.getAttribute('data-mood');
+            //store the mood in local storage
+            localStorage.setItem('mood', mood);
 
             // Apply the colours for the selected mood
             applyColors(colours[mood]);
@@ -89,8 +91,8 @@ function applyColors(moodColors) {
 
 function randomMoodColour() {
   const colorName = localStorage.getItem('colorName');
-  const color = localStorage.getItem('color');
+  const mood = localStorage.getItem('mood');
   const colourChoice = document.getElementById('colourChoice');
 
-  colourChoice.textContent = `You have chosen the ${colorName} colour, ${color}!`;
+  colourChoice.textContent = `Feeling a bit ${mood} today? Let the comforting ${colorName} embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
 }

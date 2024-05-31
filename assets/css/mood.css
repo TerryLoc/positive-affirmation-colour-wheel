@@ -24,7 +24,7 @@
 }
 
 .spin {
-  animation: spin 8s linear;
+  animation: spin 6s linear;
 }
 
 @keyframes spin {
