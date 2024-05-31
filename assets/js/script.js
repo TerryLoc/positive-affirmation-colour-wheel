@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
               // Call the function here
               randomMoodColour();
-            }, 8000);
+            }, 6000);
           })
           // Log an error if the JSON file can't be fetched
           .catch((error) =>
