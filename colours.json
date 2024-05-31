@@ -1,23 +1,23 @@
 {
   "Anxious": {
     "Light Steel Blue": "#B0C4DE",
-    "Windows Blue": "#E6E6FA",
-    "Light Sky Blue": "#AFEEEE",
-    "Cream": "#E0FFFF",
-    "Misty Rose": "#F5FFFA",
-    "Light Yellow": "#FFFFE0"
+    "Cerulean": "#98B2D1",
+    "Blue Sky": "#E0FFFF",
+    "Misty White Rose": "#F5FFFA",
+    "Cream": "#FFFFE0",
+    "Blue Mint": "#B2FFFC"
   },
   "Overwhelmed": {
     "Slate Gray": "#708090",
     "Lime Green": "#98FF98",
-    "Light Sky Blue": "#AFEEEE",
+    "Sky Blue": "#87CEEB",
     "Pinkish Beige": "#F8BFD8",
     "Light Gray": "#F5F5DC",
-    "Fire Engine Red": "#F08080"
+    "Salmon": "#F08080"
   },
   "Angry": {
     "Fire Engine Red": "#FF3737",
-    "Red": "#FF0000",
+    "Dark Pink": "#FF00A0",
     "Hot Pink": "#FF69B4",
     "Orange": "#FF8C00",
     "Golden Amber": "#FFA500",
@@ -35,16 +35,16 @@
     "Navy Blue": "#483D8B",
     "Indigo Dye": "#4B0082",
     "Pale Turquoise": "#ADD8E6",
-    "Windows Blue": "#E6E6FA",
+    "Cobalt Blue": "#0047AB",
     "Dim Gray": "#A9A9A9",
-    "Lime Green": "#008080"
+    "Aqua Green": "#008080"
   },
   "Empty": {
     "Golden Yellow": "#FFD700",
-    "Orange-Red": "#FF7F50",
+    "Orange Red": "#FF7F50",
     "Sea Green": "#40E0D0",
     "Peachy Keen": "#FFDAB9",
-    "Windows Blue": "#E6E6FA",
+    "Powder Blue": "#AFEEEE",
     "Lime Green": "#90EE90"
   }
 }

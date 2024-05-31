@@ -38,10 +38,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add the spin class to the colour wheel to animate it
             colourWheel.classList.add('spin');
-            // Remove the spin class after 8 seconds
+            // Remove the spin class after 8 seconds and change the colour of the wheel to the randomly selected colour
             setTimeout(() => {
+              // Get the keys and values of the colours for the selected mood using Object.entries
+              const colorsKeys = Object.entries(colours[mood]);
+              const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
+
+              //store the random color name and color
+              const randomColorName = randomEntry[0];
+              const randomColor = randomEntry[1];
+
+              // Change the background color of the colour wheel to the randomly selected color
               colourWheel.classList.remove('spin');
-            }, 8000);
+              colourWheel.style.background = randomColor;
+
+              //store the random color name and color in local storage
+              localStorage.setItem('colorName', randomColorName);
+              localStorage.setItem('color', randomColor);
+
+              // Call the function here
+              randomMoodColour();
+            }, 6000);
           })
           // Log an error if the JSON file can't be fetched
           .catch((error) =>
@@ -68,4 +85,12 @@ function applyColors(moodColors) {
 
   // Set the background style of the colour wheel to the conic gradient
   colourWheel1.style.background = `conic-gradient(${gradient})`;
+}
+
+function randomMoodColour() {
+  const colorName = localStorage.getItem('colorName');
+  const color = localStorage.getItem('color');
+  const colourChoice = document.getElementById('colourChoice');
+
+  colourChoice.textContent = `You have chosen the ${colorName} colour, ${color}!`;
 }
