@@ -47,9 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /** This function creates a conic gradient with the colors for the specified mood. Each color covers a 30-degree segment of the circle, starting from 0 degrees and ending at 360 degrees.
  */
-function applyColors(colors) {
+function applyColors(moodColors) {
   // Get the colour wheel element
   const colourWheel1 = document.getElementById('colourWheel1');
+
+  // Get the colors array from the moodColors object
+  const colors = Object.values(moodColors);
 
   // Create the gradient string by mapping over the colors array and joining them together
   const gradient = colors
