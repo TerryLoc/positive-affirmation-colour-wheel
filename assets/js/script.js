@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
           .then((colours) => {
             // Get the mood from the clicked button's data-mood attribute
             const mood = button.getAttribute('data-mood');
+            //store the mood in local storage
+            localStorage.setItem('mood', mood);
 
             // Apply the colours for the selected mood
             applyColors(colours[mood]);
@@ -87,10 +89,29 @@ function applyColors(moodColors) {
   colourWheel1.style.background = `conic-gradient(${gradient})`;
 }
 
+/** This function generates and displays a message with the colour name, positive word and users mood. */
 function randomMoodColour() {
-  const colorName = localStorage.getItem('colorName');
-  const color = localStorage.getItem('color');
-  const colourChoice = document.getElementById('colourChoice');
+  fetch('positive-words.json')
+    .then((response) => response.json())
+    .then((words) => {
+      const mood = localStorage.getItem('mood');
+      if (!mood || !words[mood]) {
+        console.error(
+          'Mood not found or no words available for the given mood.'
+        );
+        return;
+      }
+      // Select a random positive word from the array associated with the mood
+      const positiveWords = Object.values(words[mood]);
+      const positiveWord =
+        positiveWords[Math.floor(Math.random() * positiveWords.length)];
 
-  colourChoice.textContent = `You have chosen the ${colorName} colour, ${color}!`;
+      // Store the positive word in local storage (if needed)
+      localStorage.setItem('positiveWord', positiveWord);
+
+      const colorName = localStorage.getItem('colorName');
+      const colourChoice = document.getElementById('colourChoice');
+      // Displayed message with the colour name, positive word, and mood
+      colourChoice.textContent = `Feeling a bit ${mood} today? Let the ${positiveWord} ${colorName} embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
+    });
 }
