@@ -63,4 +63,8 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+
+  #onwardsBtn {
+    font-size: 1.5rem;
+  }
 }
