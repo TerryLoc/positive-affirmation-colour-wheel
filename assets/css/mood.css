@@ -33,7 +33,7 @@
 
 #mood {
   display: grid;
-  grid-template-columns: repeat(2, 1fr, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -49,7 +49,6 @@
 
 @media screen and (min-width: 768px) {
   #mood {
-    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
