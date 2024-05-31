@@ -40,8 +40,15 @@ document.addEventListener('DOMContentLoaded', function () {
             colourWheel.classList.add('spin');
             // Remove the spin class after 8 seconds and change the colour of the wheel to the randomly selected colour
             setTimeout(() => {
-              const colors = Object.values(colours[mood]);
-              const randomColor = colors[Math.floor(Math.random() * 6)];
+              // Get the keys and values of the colours for the selected mood using Object.entries
+              const colorsKeys = Object.entries(colours[mood]);
+              const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
+
+              //store the random color name and color
+              const randomColorName = randomEntry[0];
+              const randomColor = randomEntry[1];
+
+              console.log(randomColorName, randomColor);
 
               colourWheel.classList.remove('spin');
               colourWheel.style.background = randomColor;

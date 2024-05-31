@@ -17,7 +17,7 @@
   },
   "Angry": {
     "Fire Engine Red": "#FF3737",
-    "Red": "#FF0000",
+    "Dark Pink": "#FF00A0",
     "Hot Pink": "#FF69B4",
     "Orange": "#FF8C00",
     "Golden Amber": "#FFA500",
@@ -37,11 +37,11 @@
     "Pale Turquoise": "#ADD8E6",
     "Windows Blue": "#E6E6FA",
     "Dim Gray": "#A9A9A9",
-    "Lime Green": "#008080"
+    "Aqua Green": "#008080"
   },
   "Empty": {
     "Golden Yellow": "#FFD700",
-    "Orange-Red": "#FF7F50",
+    "Orange Red": "#FF7F50",
     "Sea Green": "#40E0D0",
     "Peachy Keen": "#FFDAB9",
     "Windows Blue": "#E6E6FA",
