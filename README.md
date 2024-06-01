@@ -46,7 +46,7 @@ Sometimes we dream to have a companion who personally uplifts our moods? Well, t
 
 This is a simple flow chart that outlines the orientation of the site and what way the user will navigate from section to section.
 
-<img src="assets/images/positive affirmation colour wheel  flow chat.png" alt="Flow chart" width="400px"/>
+<img src="assets/images/positive affirmation colour wheel  flow chat.png" alt="Flow chart" width="500px"/>
 
 ## [Features](#features)
 
