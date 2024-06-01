@@ -28,7 +28,25 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 
 ## [User Stories](#user-stories)
 
+### A SHORT BRIEF
+
+Sometimes we dream to have a companion who personally uplifts our moods? Well, that idea is what my app/website is all about – a fun filled and inspiring corner of the interweb where sadness is shaken off, and happiness sought. By incorporating little-comedic touches here and there, loads of bright colors, plus a dose of positive energy, I intend to help the user smile away there clouding mood.
+
+[USER VIEW]()
+
+1.  As a user, I want to receive uplifting and inspiring colours to help me shift my mood and perspective, so I can feel more positive and empowered throughout the day.
+
+2.  As a user struggling with anxiety or depression, I want to access a safe and supportive site where I can find comfort and reassurance, so I can feel less isolated.
+
+3.  As a user looking for a daily pick-me-up, I want to discover a curated collection of fun and uplifting content, such as positive affirmations so I can start my day on a high note and feel more energized and motivated.
+
 ## [Visual Design](#visual-design)
+
+#### [FLOW CHART]()
+
+This is a simple flow chart that outlines the orientation of the site and what way the user will navigate from section to section.
+
+<img src="assets/images/positive affirmation colour wheel  flow chat.png" alt="Flow chart" width="400px"/>
 
 ## [Features](#features)
 
