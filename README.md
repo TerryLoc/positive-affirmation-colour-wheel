@@ -68,6 +68,12 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 
 <img src="assets/images/Icons.png" alt="Site links" width="500px"/>
 
+#### [COLOURS]()
+
+I utilised the coloration palette generator [coolors](https://coolors.co) to create a harmonious and calming color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone #66839A, I integrated the usage of a transparent (rgba(3, three, 3, 0.153)) to obtain the desired impact.
+
+<img src="assets/images/btm-colours.png" alt="Website colours" width="500px"/>
+
 ## [Features](#features)
 
 ### Existing Features
