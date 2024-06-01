@@ -111,7 +111,11 @@ function randomMoodColour() {
 
       const colorName = localStorage.getItem('colorName');
       const colourChoice = document.getElementById('colourChoice');
+
+      // get the color from local storage
+      const color = localStorage.getItem('color');
       // Displayed message with the colour name, positive word, and mood
-      colourChoice.textContent = `Feeling a bit ${mood} today? Let the ${positiveWord} ${colorName} embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
+      colourChoice.innerHTML = `Feeling a bit ${mood} today? Let the ${positiveWord} <span style="color: ${color}; text-shadow: 0 1px 2px black;">${colorName}</span> embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
+      // colourChoice.textContent = `Feeling a bit ${mood} today? Let the ${positiveWord} ${colorName} embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
     });
 }
