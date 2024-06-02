@@ -1,0 +1,50 @@
+{
+  "Anxious": {
+    "Light Steel Blue": { "hex": "#B0C4DE", "feeling": "Tranquility" },
+    "Cerulean": { "hex": "#98B2D1", "feeling": "Serenity" },
+    "Blue Sky": { "hex": "#E0FFFF", "feeling": "Calmness" },
+    "Misty White Rose": { "hex": "#F5FFFA", "feeling": "Purity" },
+    "Cream": { "hex": "#FFFFE0", "feeling": "Warmth" },
+    "Blue Mint": { "hex": "#B2FFFC", "feeling": "Refreshment" }
+  },
+  "Overwhelmed": {
+    "Slate Gray": { "hex": "#708090", "feeling": "Stability" },
+    "Lime Green": { "hex": "#98FF98", "feeling": "Renewal" },
+    "Sky Blue": { "hex": "#87CEEB", "feeling": "Peacefulness" },
+    "Pinkish Beige": { "hex": "#F8BFD8", "feeling": "Softness" },
+    "Light Gray": { "hex": "#F5F5DC", "feeling": "Simplicity" },
+    "Salmon": { "hex": "#F08080", "feeling": "Comfort" }
+  },
+  "Angry": {
+    "Electric Yellow": { "hex": "#FFFF33", "feeling": "Energy" },
+    "Dark Pink": { "hex": "#FF00A0", "feeling": "Passion" },
+    "Hot Pink": { "hex": "#FF69B4", "feeling": "Boldness" },
+    "Orange": { "hex": "#FF8C00", "feeling": "Vitality" },
+    "Golden Amber": { "hex": "#FFA500", "feeling": "Warmth" },
+    "Burnt Orange": { "hex": "#FF6600", "feeling": "Strength" }
+  },
+  "Stressed": {
+    "Golden Amber": { "hex": "#FFC217", "feeling": "Positivity" },
+    "Dark Orange": { "hex": "#FF9900", "feeling": "Motivation" },
+    "Mustard Yellow": { "hex": "#F7DC6F", "feeling": "Optimism" },
+    "Golden Brown": { "hex": "#FFb500", "feeling": "Stability" },
+    "Bright Yellow": { "hex": "#FFE000", "feeling": "Cheerfulness" },
+    "Sunshine Yellow": { "hex": "#FFF400", "feeling": "Happiness" }
+  },
+  "Sad": {
+    "Navy Blue": { "hex": "#483D8B", "feeling": "Depth" },
+    "Indigo Dye": { "hex": "#4B0082", "feeling": "Introspection" },
+    "Pale Turquoise": { "hex": "#ADD8E6", "feeling": "Hope" },
+    "Cobalt Blue": { "hex": "#0047AB", "feeling": "Strength" },
+    "Deep Bordeaux": { "hex": "#660033", "feeling": "Elegance" },
+    "Aqua Green": { "hex": "#008080", "feeling": "Balance" }
+  },
+  "Empty": {
+    "Golden Yellow": { "hex": "#FFD700", "feeling": "Joy" },
+    "Orange Red": { "hex": "#FF7F50", "feeling": "Vitality" },
+    "Sea Green": { "hex": "#40E0D0", "feeling": "Renewal" },
+    "Peachy Keen": { "hex": "#FFDAB9", "feeling": "Softness" },
+    "Powder Blue": { "hex": "#AFEEEE", "feeling": "Calmness" },
+    "Lime Green": { "hex": "#90EE90", "feeling": "Freshness" }
+  }
+}
