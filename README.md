@@ -70,13 +70,13 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 
 #### [COLOURS]()
 
-I utilised the coloration palette generator [coolors](https://coolors.co) to create a harmonious and calming color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone #66839A, I integrated the usage of a transparent (rgba(3, 3, 3, 0.153)) to obtain the desired impact.
+I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious and calming color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone <code>#66839A</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.153)</code> to obtain the desired impact.
 
 <img src="assets/images/btm-colours.png" alt="Website colours" width="500px"/>
 
 #### [LOGO]()
 
-The logo was created with the help of [deep AI](https://deepai.org/machine-learning-model/text2img) image generator. I wanted the user to be greeted with a grounding picture as there first impression of of the site. The colour tones and tree give the calming grounding feel that i was looking for. My goal is to make the user feel trust in the site, and I am confident that the logo will set that tone.
+The logo was created with the help of [deep AI](https://deepai.org/machine-learning-model/text2img) image generator. I wanted the user to be greeted with a grounding picture as their first impression of of the site. The colour tones and tree give the calming grounding feeling I was looking for. My goal is to make the user have trust in the site, and I am confident that the logo will set that tone.
 
 <img src="assets/images/btm-logo.webp" width='200px'>
 
@@ -92,7 +92,7 @@ On the landing page I decided to greet the user with an upbeat message that expl
 
 <br>
 
-When they hover over the 'Lets Get Started' button it has an effect of lighting up. This is to give the impression of lighting the way for the the user to follow. The navigation for the button is controlled by <code>addEventListener('click' function {})</code>
+When they hover over the 'Lets Get Started' button it has an effect of lighting up. This is to give the impression of lighting the way for the user to follow. The navigation for the button is controlled by <code>addEventListener('click' function {})</code>
 
 <img src="assets/images/start-btn.jpg" alt="Button to navigate to mood page" width="300px"/>
 
