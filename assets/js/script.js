@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const mood = button.getAttribute('data-mood');
             localStorage.setItem('mood', mood);
 
+            const message = document.getElementById('colourChoice');
+            message.innerHTML = '';
+
             // Pass the colors for the current mood to the applyColours function
             applyColours(Object.values(coloursAndFeelings[mood]));
 
