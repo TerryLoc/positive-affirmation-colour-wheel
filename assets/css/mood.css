@@ -86,7 +86,7 @@
 
   #messageSection {
     margin-top: 30px;
-    width: 80%;
+    max-width: 80%;
   }
 
   #onwardsBtn {
