@@ -8,21 +8,75 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 
 ## Table of Content
 
-1. [User Stories](#user-stories)
+<details>
+  <summary>1. <a href="#user-stories">User Stories</a></summary>
+  <ul>
+    <li><a href="#user-view">User View</a></li>
+  </ul>
+</details>
 
-2. [Visual Design](#visual-design)
+<details>
+  <summary>2. <a href="#visual-design">Visual Design</a></summary>
+  <ul>
+    <li><a href="#design-overview">Design Overview</a></li>
+    <li><a href="#wireframes">Wireframes</a></li>
+    <!-- Add more visual design items as needed -->
+  </ul>
+</details>
 
-3. [Features](#features)
+<details>
+  <summary><a href="#features">3. Features</a></summary>
+  <ul>
+    <li><a href="#feature-1">Feature 1</a></li>
+    <li><a href="#feature-2">Feature 2</a></li>
+    <!-- Add more features as needed -->
+  </ul>
+</details>
 
-4. [Technologies](#technologies)
+<details>
+  <summary><a href="#technologies">4. Technologies</a></summary>
+  <ul>
+    <li><a href="#technology-1">Technology 1</a></li>
+    <li><a href="#technology-2">Technology 2</a></li>
+    <!-- Add more technologies as needed -->
+  </ul>
+</details>
 
-5. [Testing](#testing)
+<details>
+  <summary><a href="#testing">5. Testing</a></summary>
+  <ul>
+    <li><a href="#unit-tests">Unit Tests</a></li>
+    <li><a href="#integration-tests">Integration Tests</a></li>
+    <!-- Add more testing items as needed -->
+  </ul>
+</details>
 
-6. [Deployment](#deployment)
+<details>
+  <summary><a href="#deployment">6. Deployment</a></summary>
+  <ul>
+    <li><a href="#deployment-steps">Deployment Steps</a></li>
+    <li><a href="#environment-setup">Environment Setup</a></li>
+    <!-- Add more deployment items as needed -->
+  </ul>
+</details>
 
-7. [Credits](#credits)
+<details>
+  <summary><a href="#credits">7. Credits</a></summary>
+  <ul>
+    <li><a href="#contributor-1">Contributor 1</a></li>
+    <li><a href="#contributor-2">Contributor 2</a></li>
+    <!-- Add more credits as needed -->
+  </ul>
+</details>
 
-8. [Author](#author)
+<details>
+  <summary><a href="#author">8. Author</a></summary>
+  <ul>
+    <li><a href="#author-name">Author Name</a></li>
+    <li><a href="#author-bio">Author Bio</a></li>
+    <!-- Add more author items as needed -->
+  </ul>
+</details>
 
 <hr>
 
@@ -32,7 +86,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 
 Sometimes we dream to have a companion who personally uplifts our moods? Well, that idea is what my app/website is all about – a fun filled and inspiring corner of the interweb where sadness is shaken off, and happiness sought. By incorporating little-comedic touches here and there, loads of bright colors, plus a dose of positive energy, I intend to help the user smile away there clouding mood.
 
-[USER VIEW]()
+#### [USER VIEW](#user-view)
 
 1.  As a person, I want to receive uplifting and galvanising colourings to help me shift my mood and attitude, so I can feel more fine and empowered during the day.
 
