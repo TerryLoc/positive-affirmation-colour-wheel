@@ -44,7 +44,7 @@ main {
   flex: 1 0 auto;
 }
 
-.container {
+#container {
   font-size: 120%;
   display: flex;
   flex-direction: column;
@@ -54,14 +54,14 @@ main {
   padding: 20px;
 }
 
-.container h1 {
+#container h1 {
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
   margin: 10px 0;
 }
 
-.container p {
+#container p {
   --br-x: 30px;
   --br-y: 30px;
   border-top-right-radius: var(--br-x) var(--br-y);
@@ -132,25 +132,25 @@ footer p {
 }
 
 @media screen and (min-width: 425px) {
-  .container h1 {
+  #container h1 {
     font-size: 150%;
   }
 
-  .container p {
+  #container p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  #container {
     width: 60%;
   }
 
-  .container h1 {
+  #container h1 {
     font-size: 2rem;
   }
 
-  .container p {
+  #container p {
     font-size: 1.5rem;
   }
 

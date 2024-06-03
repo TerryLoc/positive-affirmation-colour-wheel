@@ -1,7 +1,5 @@
-'use strict';
-// Add event listener to the document when it's ready
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the start button and mood buttons
+  // Get the elements from the DOM
   const startBtn = document.getElementById('start-btn');
   const moodButtons = document.querySelectorAll('.mood-btn');
   const colourWheel = document.getElementById('colourWheel1');
@@ -10,62 +8,58 @@ document.addEventListener('DOMContentLoaded', function () {
   // Add event listener to the start button
   if (startBtn) {
     startBtn.addEventListener('click', function () {
-      // Redirect to the mood page
       window.location.href = 'mood.html';
     });
+    // Redirect from the mood to affirmations container
   } else if (onwardsBtn) {
-    // Add event listener to the onwards button if the start button is not available
     onwardsBtn.addEventListener('click', function () {
-      // Redirect to the affirmation page
-      window.location.href = 'affirmation.html';
+      const mood = document.getElementById('container');
+      const affirmation = document.getElementById('container2');
+
+      // Hide the mood container and display the affirmation container
+      mood.style.display = 'none';
+      affirmation.style.display = 'flex';
     });
   }
 
-  // Check if the colour wheel and mood buttons are available before adding event listeners
   if (colourWheel && moodButtons.length > 0) {
-    // Add event listener to each mood button
     moodButtons.forEach((button) => {
       button.addEventListener('click', function () {
         // Fetch the colours from the JSON file
-        fetch('colours.json')
+        fetch('coloursAndFeelings.json')
           .then((response) => response.json())
-          .then((colours) => {
-            // Get the mood from the clicked button's data-mood attribute
+          .then((coloursAndFeelings) => {
+            // Get the mood from the clicked button's data-mood attribute & store it in local storage
             const mood = button.getAttribute('data-mood');
-            //store the mood in local storage
             localStorage.setItem('mood', mood);
 
-            // Apply the colours for the selected mood
-            applyColors(colours[mood]);
+            // Pass the colors for the current mood to the applyColours function
+            applyColours(Object.values(coloursAndFeelings[mood]));
 
             // Add the spin class to the colour wheel to animate it
             colourWheel.classList.add('spin');
-            // Remove the spin class after 8 seconds and change the colour of the wheel to the randomly selected colour
-            setTimeout(() => {
-              // Get the keys and values of the colours for the selected mood using Object.entries
-              const colorsKeys = Object.entries(colours[mood]);
-              const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
 
-              //store the random color name and color
-              const randomColorName = randomEntry[0];
-              const randomColor = randomEntry[1];
+            // Remove the spin class after 6 seconds and change the colour of the wheel to the randomly selected colour
+            setTimeout(() => {
+              const colorsKeys = Object.entries(coloursAndFeelings[mood]);
+              const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
+              //To get the random colour name and colour hex and feeling
+              const randomColourName = randomEntry[0];
+              const randomColour = randomEntry[1];
 
               // Change the background color of the colour wheel to the randomly selected color
               colourWheel.classList.remove('spin');
-              colourWheel.style.background = randomColor;
+              colourWheel.style.background = randomColour.hex;
 
-              //store the random color name and color in local storage
-              localStorage.setItem('colorName', randomColorName);
-              localStorage.setItem('color', randomColor);
+              //store the random color name, colour and feeling in local storage
+              localStorage.setItem('colourName', randomColourName);
+              localStorage.setItem('colour', randomColour.hex);
+              localStorage.setItem('feeling', randomColour.feeling);
 
-              // Call the function here
-              randomMoodColour();
+              // Calling the function to print the message
+              moodColourMsg();
             }, 6000);
-          })
-          // Log an error if the JSON file can't be fetched
-          .catch((error) =>
-            console.error('Error: Can not connect to json', error)
-          );
+          });
       });
     });
   }
@@ -73,49 +67,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /** This function creates a conic gradient with the colors for the specified mood. Each color covers a 30-degree segment of the circle, starting from 0 degrees and ending at 360 degrees.
  */
-function applyColors(moodColors) {
-  // Get the colour wheel element
-  const colourWheel1 = document.getElementById('colourWheel1');
+function applyColours(colours) {
+  const colourWheel = document.getElementById('colourWheel1');
 
-  // Get the colors array from the moodColors object
-  const colors = Object.values(moodColors);
+  // Check if colours is an array
+  if (!Array.isArray(colours)) {
+    console.error('colours is not an array');
+    return;
+  }
 
   // Create the gradient string by mapping over the colors array and joining them together
-  const gradient = colors
-    .map((color, index) => `${color} ${index * 60}deg ${(index + 1) * 60}deg`)
+  const gradient = colours
+    .map(
+      (color, index) => `${color.hex} ${index * 60}deg ${(index + 1) * 60}deg`
+    )
     .join(',');
 
   // Set the background style of the colour wheel to the conic gradient
-  colourWheel1.style.background = `conic-gradient(${gradient})`;
+  colourWheel.style.background = `conic-gradient(${gradient})`;
 }
 
-/** This function generates and displays a message with the colour name, positive word and users mood. */
-function randomMoodColour() {
-  fetch('positive-words.json')
-    .then((response) => response.json())
-    .then((words) => {
-      const mood = localStorage.getItem('mood');
-      if (!mood || !words[mood]) {
-        console.error(
-          'Mood not found or no words available for the given mood.'
-        );
-        return;
-      }
-      // Select a random positive word from the array associated with the mood
-      const positiveWords = Object.values(words[mood]);
-      const positiveWord =
-        positiveWords[Math.floor(Math.random() * positiveWords.length)];
-
-      // Store the positive word in local storage (if needed)
-      localStorage.setItem('positiveWord', positiveWord);
-
-      const colorName = localStorage.getItem('colorName');
-      const colourChoice = document.getElementById('colourChoice');
-
-      // get the color from local storage
-      const color = localStorage.getItem('color');
-      // Displayed message with the colour name, positive word, and mood
-      colourChoice.innerHTML = `Feeling a bit ${mood} today? Let the ${positiveWord} <span style="color: ${color}; text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%">${colorName}</span> embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
-      // colourChoice.textContent = `Feeling a bit ${mood} today? Let the ${positiveWord} ${colorName} embrace your soul and elevate your spirits! Click the button below for your uplifting affirmation.`;
-    });
+/**
+This function displays a message with the colour name, a positive word, and mood to the user.
+ */
+function moodColourMsg() {
+  const mood = localStorage.getItem('mood');
+  const colourName = localStorage.getItem('colourName');
+  const colour = localStorage.getItem('colour');
+  const feeling = localStorage.getItem('feeling');
+  const colourChoice = document.getElementById('colourChoice');
+  // Displayed message with CSS.
+  colourChoice.innerHTML = `Feeling a bit ${mood} today? Let the colour <span style="color: ${colour}; text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%">${colourName}</span> embrace your soul and elevate your spirits with the embodiment of <span style='text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%'>${feeling}</span>! Click the button below for your uplifting affirmation.`;
 }
