@@ -52,6 +52,12 @@ main {
   width: 90%;
   gap: 20px;
   padding: 20px;
+  margin-top: 10px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
 }
 
 #container h1 {
@@ -66,7 +72,7 @@ main {
   --br-y: 30px;
   border-top-right-radius: var(--br-x) var(--br-y);
   border-top-left-radius: var(--br-x) var(--br-y);
-  width: 100%;
+  width: 80%;
   font-size: 1rem;
   text-align: center;
   background-color: var(--transparent-bg);
