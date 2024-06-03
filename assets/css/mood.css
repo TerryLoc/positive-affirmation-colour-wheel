@@ -4,11 +4,6 @@
   --transparent-bg: #03030327;
 }
 
-#moodH1 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
 #colourWheel1 {
   width: 200px;
   height: 200px;
@@ -65,10 +60,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  #moodH1 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-  }
   #mood {
     gap: 30px;
   }
@@ -79,7 +70,7 @@
   }
 
   .mood-btn {
-    padding: 10px 15px;
+    padding: 7px 12px;
     font-size: 1.5rem;
     cursor: pointer;
   }

@@ -49,10 +49,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
   gap: 20px;
   padding: 20px;
   margin-top: 10px;
+  width: 80%;
 }
 
 #about {
@@ -62,7 +62,7 @@ main {
 
 #container h1 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
   margin: 10px 0;
 }
@@ -72,7 +72,6 @@ main {
   --br-y: 30px;
   border-top-right-radius: var(--br-x) var(--br-y);
   border-top-left-radius: var(--br-x) var(--br-y);
-  width: 80%;
   font-size: 1rem;
   text-align: center;
   background-color: var(--transparent-bg);
@@ -90,7 +89,7 @@ main {
   background-color: var(--transparent-bg);
   color: var(--font-color);
   border: 2px solid var(--font-color);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   margin: 30px 0;
   transition: box-shadow 0.2s ease;
@@ -145,13 +144,14 @@ footer p {
   #container p {
     font-size: 1.2rem;
   }
+
+  #start-btn,
+  .onwards {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  #container {
-    width: 60%;
-  }
-
   #container h1 {
     font-size: 2rem;
   }
@@ -170,5 +170,16 @@ footer p {
 
   .links a {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #container {
+    width: 50%;
   }
 }
