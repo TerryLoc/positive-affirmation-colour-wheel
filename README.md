@@ -92,7 +92,7 @@ On the landing page I decided to greet the user with an upbeat message that expl
 
 <br>
 
-When they hover over the 'Lets Get Started' button it has an effect of lighting up. This is to give the impression of lighting the way for the the user to follow. The navigation for the button is controlled by <code>addEventListener('click' function {})</code>
+When they hover over the 'Lets Get Started' button it has an effect of lighting up. This is to give the impression of lighting the way for the user to follow. The navigation for the button is controlled by <code>addEventListener('click' function {})</code>
 
 <img src="assets/images/start-btn.jpg" alt="Button to navigate to mood page" width="300px"/>
 
