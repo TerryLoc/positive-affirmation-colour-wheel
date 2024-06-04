@@ -158,13 +158,13 @@ When they hover over the 'Lets Get Started' button it has an effect of lighting 
 
 This is the colour wheel area of the <code>mood.html</code> page where the user is greeted with a small message asking them what mood is affecting their day.
 
-|                             Image                              |         Feature          |           Info           |
-| :------------------------------------------------------------: | :----------------------: | :----------------------: |
-| <img src="assets/images/colour-wheel-area.png" width="275px"/> |        Wheel page        | This is the info section |
-|  <img src="assets/images/mood-selection.png" width="275px"/>   |      Mood Selection      | This is the info section |
-|   <img src="assets/images/colour-wheel.png" width="275px"/>    |       Colour Wheel       | This is the info section |
-|   <img src="assets/images/message-reply.png" width="275px"/>   | Message & colour display | This is the info section |
-|  <img src="assets/images/onwards-button.png" width="275px"/>   |      Onwards Button      | This is the info section |
+| Image                                                          | Feature                  | Info                                                                                                                                                                                                                        |
+| -------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="assets/images/colour-wheel-area.png" width="500px"/> | Wheel page               | The colour wheel area is set out with the mood buttons wheel section and the return message area.                                                                                                                           |
+| <img src="assets/images/mood-selection.png" width="500px"/>    | Mood Selection           | The user picks from six different moods that can effect us all everyday. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the json. The mood button corresponds to the same mood in the json. |
+| <img src="assets/images/colour-wheel.png" width="500px"/>      | Colour Wheel             | After the user selects a mood the wheel has 6 different cools depending on the mood, it spins & then returns a random colour.                                                                                               |
+| <img src="assets/images/message-reply.png" width="500px"/>     | Message & colour display | This is the info section                                                                                                                                                                                                    |
+| <img src="assets/images/onwards-button.png" width="500px"/>    | Onwards Button           | This is the info section                                                                                                                                                                                                    |
 
 #### [AFFIRMATION SECTION](#affirmation-section)
 
