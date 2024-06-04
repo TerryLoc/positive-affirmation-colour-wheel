@@ -127,7 +127,7 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 
 #### [COLOURS](#colours)
 
-I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone <code>#325570</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
+I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious colour scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colours, warding off overwhelming visual stimuli. To attain the deeper blue tone <code>#2A495F</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
 
 <img src="assets/images/new-btm-colours.png" alt="Website colours" width="500px"/>
 
