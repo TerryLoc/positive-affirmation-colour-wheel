@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
               // Calling the function to print the message
               moodColourMsg();
-            }, 6000);
+            }, 3000);
           });
       });
     });
