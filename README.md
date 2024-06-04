@@ -28,16 +28,17 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 </details>
 
 <details>
-  <summary><a href="#features">3. Features</a></summary>
+  <summary>3. <a href="#features">Features</a></summary>
   <ul>
-    <li><a href="#feature-1">Feature 1</a></li>
-    <li><a href="#feature-2">Feature 2</a></li>
-    <!-- Add more features as needed -->
+    <li><a href="#home-page">Home Page</a></li>
+    <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
+    <li><a href="#affirmation-section">Affirmation Section</a></li>
+    <li><a href="#screenshot-button">Screenshot Button</a></li>
   </ul>
 </details>
 
 <details>
-  <summary><a href="#technologies">4. Technologies</a></summary>
+  <summary>4. <a href="#technologies">Technologies</a></summary>
   <ul>
     <li><a href="#technology-1">Technology 1</a></li>
     <li><a href="#technology-2">Technology 2</a></li>
@@ -46,7 +47,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 </details>
 
 <details>
-  <summary><a href="#testing">5. Testing</a></summary>
+  <summary>5. <a href="#testing">Testing</a></summary>
   <ul>
     <li><a href="#unit-tests">Unit Tests</a></li>
     <li><a href="#integration-tests">Integration Tests</a></li>
@@ -55,7 +56,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 </details>
 
 <details>
-  <summary><a href="#deployment">6. Deployment</a></summary>
+  <summary>6. <a href="#deployment">Deployment</a></summary>
   <ul>
     <li><a href="#deployment-steps">Deployment Steps</a></li>
     <li><a href="#environment-setup">Environment Setup</a></li>
@@ -64,7 +65,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 </details>
 
 <details>
-  <summary><a href="#credits">7. Credits</a></summary>
+  <summary>7. <a href="#credits">Credits</a></summary>
   <ul>
     <li><a href="#contributor-1">Contributor 1</a></li>
     <li><a href="#contributor-2">Contributor 2</a></li>
@@ -73,15 +74,13 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 </details>
 
 <details>
-  <summary><a href="#author">8. Author</a></summary>
+  <summary>8. <a href="#author">Author</a></summary>
   <ul>
     <li><a href="#author-name">Author Name</a></li>
     <li><a href="#author-bio">Author Bio</a></li>
     <!-- Add more author items as needed -->
   </ul>
 </details>
-
-<hr>
 
 ## [User Stories](#user-stories)
 
@@ -127,7 +126,7 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 
 #### [COLOURS](#colours)
 
-I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone <code>#325570</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
+I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious colour scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colours, warding off overwhelming visual stimuli. To attain the deeper blue tone <code>#2A495F</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
 
 <img src="assets/images/new-btm-colours.png" alt="Website colours" width="500px"/>
 
@@ -141,7 +140,7 @@ The logo was created with the help of [deep AI](https://deepai.org/machine-learn
 
 ### Existing Features
 
-[HOME PAGE]()
+#### [HOME PAGE](#home-page)
 
 On the landing page I decided to greet the user with an upbeat message that explains what the app/ site will offer. I hope for the user to be feeling a little bit more positive and intrigued before they navigate to the application part of the site.
 
@@ -155,15 +154,25 @@ When they hover over the 'Lets Get Started' button it has an effect of lighting 
 
 <br>
 
-[COLOUR WHEEL AREA]()
+#### [COLOUR WHEEL AREA](#colour-wheel-area)
 
-- **The affirmation section**
+This is the colour wheel area of the <code>mood.html</code> page where the user is greeted with a small message asking them what mood is affecting their day.
+
+|                             Image                              |         Feature          |           Info           |
+| :------------------------------------------------------------: | :----------------------: | :----------------------: |
+| <img src="assets/images/colour-wheel-area.png" width="275px"/> |        Wheel page        | This is the info section |
+|  <img src="assets/images/mood-selection.png" width="275px"/>   |      Mood Selection      | This is the info section |
+|   <img src="assets/images/colour-wheel.png" width="275px"/>    |       Colour Wheel       | This is the info section |
+|   <img src="assets/images/message-reply.png" width="275px"/>   | Message & colour display | This is the info section |
+|  <img src="assets/images/onwards-button.png" width="275px"/>   |      Onwards Button      | This is the info section |
+
+#### [AFFIRMATION SECTION](#affirmation-section)
 
 ![Generator]()
 
-- **The Screenshot Section**
+#### [SCREENSHOT BUTTON](#screenshot-button)
 
-  - This section will allow the user to take a screenshot of the affirmation and colour, so they can keep it with them.
+This section will allow the user to take a screenshot of the affirmation and colour, so they can keep it with them.
 
 ![Screenshot]()
 
