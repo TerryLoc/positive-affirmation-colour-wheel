@@ -1,9 +1,3 @@
-:root {
-  --font-color: #fbf4e6;
-  --bg-color: #789ab6;
-  --transparent-bg: #03030327;
-}
-
 #colourWheel1 {
   width: 200px;
   height: 200px;
@@ -19,7 +13,7 @@
 }
 
 .spin {
-  animation: spin 6s linear;
+  animation: spin 3s linear;
 }
 
 @keyframes spin {
