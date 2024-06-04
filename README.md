@@ -18,9 +18,12 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 <details>
   <summary>2. <a href="#visual-design">Visual Design</a></summary>
   <ul>
-    <li><a href="#design-overview">Design Overview</a></li>
+    <li><a href="#flow-chart">Flow Chart</a></li>
     <li><a href="#wireframes">Wireframes</a></li>
-    <!-- Add more visual design items as needed -->
+    <li><a href="#font">Font</a></li>
+    <li><a href="#icons">Icons</a></li>
+    <li><a href="#colours">Colours</a></li>
+    <li><a href="#logo">Logo</a></li>
   </ul>
 </details>
 
@@ -96,7 +99,7 @@ Sometimes we dream to have a companion who personally uplifts our moods? Well, t
 
 ## [Visual Design](#visual-design)
 
-#### [FLOW CHART]()
+#### [FLOW CHART](#flow-chart)
 
 This is a simple flow chart that outlines the orientation of the site and what way the user will navigate from section to section.
 
@@ -104,7 +107,7 @@ This is a simple flow chart that outlines the orientation of the site and what w
 
 #### [WIREFRAMES]()
 
-#### [FONT]()
+#### [FONT](#font)
 
 I decided on the font Nunito for its mild, rounded corners, which I believe will create a experience of warmth and approachability upon arrival. By choosing a font with a softer side, I purpose to bring a sense of comfort and ease, making users feel extra comfortable as they navigate the website.
 
@@ -112,7 +115,7 @@ I decided on the font Nunito for its mild, rounded corners, which I believe will
 
 <img src="assets/images/Nunito-Font-Family.jpg" alt="Website Font" width="500px"/>
 
-#### [ICONS]()
+#### [ICONS](#icons)
 
 The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon library using the <<i>i</i>> tag. They are utalised in the footer.
 
@@ -120,15 +123,15 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 - Instagram
 - TikTok
 
-<img src="assets/images/Icons.png" alt="Site links" width="500px"/>
+<img src="assets/images/social-links.png" alt="Site links" width="500px"/>
 
-#### [COLOURS]()
+#### [COLOURS](#colours)
 
-I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious and calming color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone <code>#66839A</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.153)</code> to obtain the desired impact.
+I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious color scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colors, warding off overwhelming visual stimuli. To attain the deep blue tone <code>#325570</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
 
-<img src="assets/images/btm-colours.png" alt="Website colours" width="500px"/>
+<img src="assets/images/new-btm-colours.png" alt="Website colours" width="500px"/>
 
-#### [LOGO]()
+#### [LOGO](#logo)
 
 The logo was created with the help of [deep AI](https://deepai.org/machine-learning-model/text2img) image generator. I wanted the user to be greeted with a grounding picture as their first impression of of the site. The colour tones and tree give the calming grounding feeling I was looking for. My goal is to make the user have trust in the site, and I am confident that the logo will set that tone.
 
@@ -142,13 +145,13 @@ The logo was created with the help of [deep AI](https://deepai.org/machine-learn
 
 On the landing page I decided to greet the user with an upbeat message that explains what the app/ site will offer. I hope for the user to be feeling a little bit more positive and intrigued before they navigate to the application part of the site.
 
-<img src="assets/images/home-page.jpg" alt="landing page" width="500px"/>
+<img src="assets/images/home-page.png" alt="landing page" width="500px"/>
 
 <br>
 
 When they hover over the 'Lets Get Started' button it has an effect of lighting up. This is to give the impression of lighting the way for the user to follow. The navigation for the button is controlled by <code>addEventListener('click' function {})</code>
 
-<img src="assets/images/start-btn.jpg" alt="Button to navigate to mood page" width="300px"/>
+<img src="assets/images/lgs-button.png" alt="Button to navigate to mood page" width="300px"/>
 
 <br>
 
