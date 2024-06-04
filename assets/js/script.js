@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
       affirmation.style.display = 'flex';
     });
   }
-
+  // Check if the colourWheel object exists and if the moodButtons array has at least one element
   if (colourWheel && moodButtons.length > 0) {
+    // Loop through each button in the moodButtons array
     moodButtons.forEach((button) => {
       button.addEventListener('click', function () {
         // Fetch the colours from the JSON file
