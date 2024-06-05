@@ -104,7 +104,13 @@ This is a simple flow chart that outlines the orientation of the site and what w
 
 <img src="assets/images/positive affirmation colour wheel  flow chat.png" alt="Flow chart" width="500px"/>
 
-#### [WIREFRAMES]()
+#### [WIREFRAMES](#wireframes)
+
+|                                           Desktop                                            |    Pages    |                                           Mobile                                            |
+| :------------------------------------------------------------------------------------------: | :---------: | :-----------------------------------------------------------------------------------------: |
+|    <img src="assets/images/wireframes/home-desktop.jpg" alt="appearance" width="300px"/>     |   Landing   |    <img src="assets/images/wireframes/home-mobile.jpg" alt="appearance" width="200px"/>     |
+|    <img src="assets/images/wireframes/mood-desktop.jpg" alt="appearance" width="300px"/>     |    Mood     |    <img src="assets/images/wireframes/mood-mobile.jpg" alt="appearance" width="200px"/>     |
+| <img src="assets/images/wireframes/affirmation-desktop.jpg" alt="appearance" width="300px"/> | Affirmation | <img src="assets/images/wireframes/affirmation-mobile.jpg" alt="appearance" width="200px"/> |
 
 #### [FONT](#font)
 
