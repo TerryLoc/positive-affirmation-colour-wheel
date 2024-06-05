@@ -158,7 +158,7 @@ When they hover over the 'Lets Get Started' button it has an effect of lighting 
 
 This is the colour wheel area of the <code>mood.html</code> page where the user is greeted with a small message asking them what mood is affecting their day.
 
-<table table-layout: fixed;">
+<table "width=100%; table-layout: fixed;">
   <tr>
     <th style="width: 35%;">Image</th>
     <th style="width: 15%;">Feature</th>
