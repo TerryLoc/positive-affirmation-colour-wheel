@@ -160,34 +160,34 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
 
 <table style="width:100%; table-layout: fixed;">
   <tr>
-    <th style="width: 35%;">Image</th>
+    <th style="width: 30%;">Image</th>
     <th style="width: 15%;">Feature</th>
-    <th style="width: 50%;">Info</th>
+    <th style="width: 55%;">Info</th>
   </tr>
   <tr>
-    <td><img src="assets/images/colour-wheel-area.png" width="250"/></td>
+    <td><img src="assets/images/colour-wheel-area.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Wheel page</td>
     <td>The colour wheel area is set out with the mood buttons wheel section and the return message area.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/mood-selection.png" width="250"/></td>
+    <td><img src="assets/images/mood-selection.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Mood Selection</td>
-    <td >The user picks from six different moods that can effect us all everyday. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the json. The mood button corresponds to the same mood in the json.</td>
+    <td>The user picks from six different moods that can affect us all every day. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the JSON. The mood button corresponds to the same mood in the JSON.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/colour-wheel.png" width="250"/></td>
+    <td><img src="assets/images/colour-wheel.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Colour Wheel</td>
-    <td>After the user selects a mood the wheel applies <code>applyColours(Object.values(coloursAndFeelings[mood]));</code> each mood has 6 different colours.</td>
+    <td>After the user selects a mood, the wheel applies <code>applyColours(Object.values(coloursAndFeelings[mood]));</code> Each mood has 6 different colours.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/message-reply.png" width="250"/></td>
+    <td><img src="assets/images/message-reply.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Message & colour display</td>
-    <td>When the spin class finishes with the <code>setTimeout(() => {})</code> function the user is presented with a message relating to the random colour. This is achieved with <code>moodColourMsg()</code> function.</td>
+    <td>When the spin class finishes with the <code>setTimeout(() => {})</code> function, the user is presented with a message relating to the random colour. This is achieved with the <code>moodColourMsg()</code> function.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/onwards-button.png" width="250"/></td>
+    <td><img src="assets/images/onwards-button.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Onwards Button</td>
-    <td>The onwards button takes the user to the affirmation section of the mood app. This is controlled with an <code>onwardsBtn.addEventListener('click', function () {})</code>. It also gives the user a feel of lighting the way the same as the button on the home page.</td>
+    <td>The onwards button takes the user to the affirmation section of the mood app. This is controlled with an <code>onwardsBtn.addEventListener('click', function () {})</code>. It also gives the user a feel of lighting the way, the same as the button on the home page.</td>
   </tr>
 </table>
 
