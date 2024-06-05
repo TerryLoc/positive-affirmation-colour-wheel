@@ -160,9 +160,9 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
 
 <table style="width:100%; table-layout: fixed;">
   <tr>
-    <th style="width: 30%;">Image</th>
+    <th style="width: 35%;">Image</th>
     <th style="width: 15%;">Feature</th>
-    <th style="width: 55%;">Info</th>
+    <th style="width: 50%;">Info</th>
   </tr>
   <tr>
     <td><img src="assets/images/colour-wheel-area.png" width="250"/></td>
