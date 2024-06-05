@@ -158,13 +158,46 @@ When they hover over the 'Lets Get Started' button it has an effect of lighting 
 
 This is the colour wheel area of the <code>mood.html</code> page where the user is greeted with a small message asking them what mood is affecting their day.
 
-| Image                                                          | Feature                  | Info                                                                                                                                                                                                                        |
-| -------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="assets/images/colour-wheel-area.png" width="500px"/> | Wheel page               | The colour wheel area is set out with the mood buttons wheel section and the return message area.                                                                                                                           |
-| <img src="assets/images/mood-selection.png" width="500px"/>    | Mood Selection           | The user picks from six different moods that can effect us all everyday. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the json. The mood button corresponds to the same mood in the json. |
-| <img src="assets/images/colour-wheel.png" width="500px"/>      | Colour Wheel             | After the user selects a mood the wheel has 6 different cools depending on the mood, it spins & then returns a random colour.                                                                                               |
-| <img src="assets/images/message-reply.png" width="500px"/>     | Message & colour display | This is the info section                                                                                                                                                                                                    |
-| <img src="assets/images/onwards-button.png" width="500px"/>    | Onwards Button           | This is the info section                                                                                                                                                                                                    |
+<table style="width:100%">
+  <tr>
+    <th>Image</th>
+    <th>Feature</th>
+    <th>Info</th>
+  </tr>
+  <tr>
+    <td><img src="assets/images/colour-wheel-area.png" width="200"/></td>
+    <td>Wheel page</td>
+    <td>The colour wheel area is set out with the mood buttons wheel section and the return message area.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/mood-selection.png" width="200"/></td>
+    <td>Mood Selection</td>
+    <td >The user picks from six different moods that can effect us all everyday. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the json. The mood button corresponds to the same mood in the json.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/colour-wheel.png" width="200"/></td>
+    <td>Colour Wheel</td>
+    <td>After the user selects a mood the wheel applies <code>applyColours(Object.values(coloursAndFeelings[mood]));</code> each mood has 6 different colours.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/message-reply.png" width="200"/></td>
+    <td>Message & colour display</td>
+    <td>When the spin class finishes with the <code>setTimeout(() => {})</code> function the user is presented with a message relating to the random colour. This is achieved with <code>moodColourMsg()</code> function.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/onwards-button.png" width="200"/></td>
+    <td>Onwards Button</td>
+    <td>The onwards button takes the user to the affirmation section of the mood app. This is controlled with an <code>onwardsBtn.addEventListener('click', function () {})</code>. It also gives the user a feel of lighting the way the same as the button on the home page.</td>
+  </tr>
+</table>
+
+<!-- | Image                                                          | Feature                  | Info                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="assets/images/colour-wheel-area.png" width="500px"/> | Wheel page               | The colour wheel area is set out with the mood buttons wheel section and the return message area.                                                                                                                                                                      |
+| <img src="assets/images/mood-selection.png" width="500px"/>    | Mood Selection           | The user picks from six different moods that can effect us all everyday. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the json. The mood button corresponds to the same mood in the json.                                            |
+| <img src="assets/images/colour-wheel.png" width="500px"/>      | Colour Wheel             | After the user selects a mood the wheel applies <code>applyColours(Object.values(coloursAndFeelings[mood]));</code> each mood has 6 different colours.                                                                                                                 |
+| <img src="assets/images/message-reply.png" width="500px"/>     | Message & colour display | When the spin class finishes with the <code>setTimeout(() => {})</code> function the user is presented with a message relating to the random colour. This is achieved with <code>moodColourMsg()</code> function.                                                      |
+| <img src="assets/images/onwards-button.png" width="500px"/>    | Onwards Button           | The onwards button takes the user to the affirmation section of the mood app. This is controlled with an <code>onwardsBtn.addEventListener('click', function () {})</code>. It also gives the user a feel if lighting the way the same as the button on the home page. | -->
 
 #### [AFFIRMATION SECTION](#affirmation-section)
 
