@@ -70,16 +70,19 @@
 }
 
 #card {
+  --br-x: 30px;
+  --br-y: 30px;
+  border-top-right-radius: var(--br-x) var(--br-y);
+  border-top-left-radius: var(--br-x) var(--br-y);
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 500px;
   margin: 15px;
   padding: 20px;
-  border-radius: 10px;
   text-align: center;
   color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   border: 7px solid var(--font-color);
 }
 
