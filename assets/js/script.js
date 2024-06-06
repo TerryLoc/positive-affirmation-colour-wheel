@@ -10,8 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     startBtn.addEventListener('click', function () {
       window.location.href = 'mood.html';
     });
-    // Redirect from the mood to affirmations container
-  } else if (onwardsBtn) {
+  }
+
+  // Redirect from the mood to affirmations container
+  if (onwardsBtn) {
     onwardsBtn.addEventListener('click', function () {
       const mood = document.getElementById('container');
       const affirmation = document.getElementById('container2');
@@ -21,6 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
       affirmation.style.display = 'flex';
     });
   }
+
+  // Fetch affirmation when the affirmation button is clicked
+  const affirmationBtn = document.getElementById('affirmationBtn');
+  if (affirmationBtn) {
+    affirmationBtn.addEventListener('click', fetchAffirmation);
+  }
+
   // Check if the colourWheel object exists and if the moodButtons array has at least one element
   if (colourWheel && moodButtons.length > 0) {
     // Loop through each button in the moodButtons array
@@ -101,10 +110,89 @@ function moodColourMsg() {
   const feeling = localStorage.getItem('feeling');
   const colourChoice = document.getElementById('colourChoice');
 
-  // Scroll to the colour wheel
-  const wheel = document.getElementById('colourWheel1');
-  wheel.scrollIntoView({ behavior: 'smooth' });
+  // Scroll to the bottom of the page
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth',
+  });
 
   // Displayed message with CSS.
   colourChoice.innerHTML = `Feeling a bit ${mood} today? Let the colour <span style="color: ${colour}; text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%">${colourName}</span> embrace your soul and elevate your spirits with the embodiment of <span style='text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%'>${feeling}</span>! Click the button below for your uplifting affirmation.`;
+}
+
+// function displayAffirmation() {
+//   const mood = localStorage.getItem('mood');
+
+//   switch (mood) {
+//     case 'Angry':
+//       fetchAffirmation('happiness');
+//       break;
+//     case 'Anxious':
+//       fetchAffirmation('sadness');
+//       break;
+//     case 'Empty':
+//       fetchAffirmation('anger');
+//       break;
+//     case 'Overwhelmed':
+//       fetchAffirmation('calmness');
+//       break;
+//     case 'Sad':
+//       fetchAffirmation('excitement');
+//       break;
+//     case 'Stressed':
+//       fetchAffirmation('stress');
+//       break;
+//     default:
+//       console.error('Mood not found');
+//   }
+// }
+
+// API URL
+const category = 'happiness';
+const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+
+// Options for the fetch request
+const options = {
+  method: 'GET',
+  headers: {
+    'X-Api-Key': 'KQg0i+HnB0+QxWeM8ljLmQ==dLi31iCPLVOfUTI4',
+    'Content-Type': 'application/json',
+  },
+};
+
+async function fetchAffirmation() {
+  const quote = document.getElementById('quote');
+  const author = document.getElementById('author');
+  const colour = localStorage.getItem('colour');
+
+  // Get the colour from local storage
+  const card = document.getElementById('card');
+  const innerMessage = document.getElementById('innerMessage');
+  // Set the background color of the card to the selected colour
+  card.style.backgroundColor = colour;
+  innerMessage.style.backgroundColor = 'rgba(3, 3, 3, 0.8)';
+
+  // Display the selected mood and colour on the card
+  const yourMood = localStorage.getItem('mood');
+  const colourName = localStorage.getItem('colourName');
+
+  const selectedColour = document.getElementById('selectedColour');
+  const selectedMood = document.getElementById('selectedMood');
+
+  selectedMood.innerHTML = `Let ${yourMood} go!`;
+  selectedColour.innerHTML = `Embrace ${colourName}: ${colour}`;
+
+  // Fetch the affirmation from the API
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const result = await response.json();
+    // Display the affirmation and author to DOM
+    quote.innerHTML = result[0].quote;
+    author.innerHTML = result[0].author;
+  } catch (error) {
+    console.error('Error:The API is not responding', error);
+  }
 }
