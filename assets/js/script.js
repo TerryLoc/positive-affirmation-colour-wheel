@@ -159,7 +159,9 @@ const options = {
     'Content-Type': 'application/json',
   },
 };
-
+/**
+ Fetches an affirmation from the API and displays it on the page.
+ */
 async function fetchAffirmation() {
   const quote = document.getElementById('quote');
   const author = document.getElementById('author');
@@ -179,6 +181,7 @@ async function fetchAffirmation() {
   const selectedColour = document.getElementById('selectedColour');
   const selectedMood = document.getElementById('selectedMood');
 
+  // Display the selected mood and colour on the card
   selectedMood.innerHTML = `Let ${yourMood} go!`;
   selectedColour.innerHTML = `Embrace ${colourName}: ${colour}`;
 
