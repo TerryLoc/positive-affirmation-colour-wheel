@@ -100,6 +100,11 @@ function moodColourMsg() {
   const colour = localStorage.getItem('colour');
   const feeling = localStorage.getItem('feeling');
   const colourChoice = document.getElementById('colourChoice');
+
+  // Scroll to the colour wheel
+  const wheel = document.getElementById('colourWheel1');
+  wheel.scrollIntoView({ behavior: 'smooth' });
+
   // Displayed message with CSS.
   colourChoice.innerHTML = `Feeling a bit ${mood} today? Let the colour <span style="color: ${colour}; text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%">${colourName}</span> embrace your soul and elevate your spirits with the embodiment of <span style='text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%'>${feeling}</span>! Click the button below for your uplifting affirmation.`;
 }
