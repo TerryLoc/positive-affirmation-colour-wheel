@@ -166,24 +166,23 @@ async function fetchAffirmation() {
   const quote = document.getElementById('quote');
   const author = document.getElementById('author');
   const colour = localStorage.getItem('colour');
+  const feeling = localStorage.getItem('feeling');
 
   // Get the colour from local storage
-  const card = document.getElementById('card');
-  const innerMessage = document.getElementById('innerMessage');
-  // Set the background color of the card to the selected colour
+  const card = document.getElementById('innerCard');
+  // Set the colour of the card to the random colour
   card.style.backgroundColor = colour;
-  innerMessage.style.backgroundColor = 'rgba(3, 3, 3, 0.8)';
 
   // Display the selected mood and colour on the card
   const yourMood = localStorage.getItem('mood');
   const colourName = localStorage.getItem('colourName');
 
   const selectedColour = document.getElementById('selectedColour');
-  const selectedMood = document.getElementById('selectedMood');
+  const selectedFeeling = document.getElementById('selectedFeeling');
 
   // Display the selected mood and colour on the card
-  selectedMood.innerHTML = `Let ${yourMood} go!`;
-  selectedColour.innerHTML = `Embrace ${colourName}: ${colour}`;
+  selectedFeeling.innerHTML = `${feeling}`;
+  selectedColour.innerHTML = `${colour}`;
 
   // Fetch the affirmation from the API
   try {
