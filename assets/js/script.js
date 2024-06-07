@@ -170,8 +170,10 @@ async function fetchAffirmation() {
 
   // Get the colour from local storage
   const card = document.getElementById('innerCard');
+  const lineArea = document.getElementById('lineArea');
   // Set the colour of the card to the random colour
   card.style.backgroundColor = colour;
+  lineArea.style.backgroundColor = colour;
 
   // Display the selected mood and colour on the card
   const yourMood = localStorage.getItem('mood');
