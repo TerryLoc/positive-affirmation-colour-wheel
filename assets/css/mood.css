@@ -82,7 +82,7 @@
   position: relative;
   background-color: aquamarine;
   min-width: 80px;
-  max-width: 200px;
+  max-width: 300px;
   min-height: 200px;
   max-height: 500px;
   border-right: 1px solid var(--card-main);
@@ -133,6 +133,8 @@
 #quote {
   font-size: 1rem;
   font-style: italic;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .author {
@@ -168,4 +170,40 @@
   }
 
   /* card Style */
+  #container2 {
+    margin-top: 100px;
+  }
+
+  .outerCard {
+    min-width: 400px;
+    min-height: 250px;
+  }
+
+  #innerCard {
+    min-width: 100px;
+    min-height: 250px;
+  }
+
+  #cardTitle {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  #quote {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  .author {
+    margin-top: 40px;
+    font-size: 1.2rem;
+  }
+
+  #selectedColour {
+    top: 20px;
+  }
+  #selectedFeeling {
+    top: 25px;
+    left: 35px;
+  }
 }
