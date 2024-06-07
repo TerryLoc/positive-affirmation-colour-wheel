@@ -54,12 +54,15 @@
 }
 
 /* Affirmation card */
+#cardH1 {
+  padding: 20px 10px;
+}
+
 #container2 {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0 10px;
-  margin-top: 70px;
   display: none;
 }
 
@@ -70,7 +73,7 @@
   min-width: 270px;
   max-width: 500px;
   min-height: 200px;
-  max-height: 400px;
+  max-height: 600px;
   border: 2px solid var(--card-main);
   margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(47, 47, 47, 0.7);
@@ -80,12 +83,11 @@
 
 #innerCard {
   position: relative;
-  background-color: aquamarine;
+  background-color: var(--transparent-bg);
   min-width: 80px;
   max-width: 300px;
   min-height: 200px;
-  max-height: 500px;
-  border-right: 1px solid var(--card-main);
+  max-height: 600px;
   --br-x: 50%;
   --br-y: 50%;
   --br-i: 10px;
@@ -94,6 +96,19 @@
   border-bottom-left-radius: var(--br-j);
   border-top-right-radius: var(--br-x) var(--br-y);
   border-bottom-right-radius: var(--br-x) var(--br-y);
+}
+
+#lineArea {
+  position: absolute;
+  top: 50;
+  left: 1;
+  min-width: 200px;
+  max-width: 500px;
+  height: 10px;
+  margin-top: 3px;
+  background-color: var(--transparent-bg);
+  border-bottom: 1px solid var(--card-main);
+  border-right: 1px solid var(--card-main);
 }
 
 #selectedColour,
@@ -134,7 +149,7 @@
   font-size: 1rem;
   font-style: italic;
   width: 90%;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .author {
@@ -170,9 +185,6 @@
   }
 
   /* card Style */
-  #container2 {
-    margin-top: 100px;
-  }
 
   .outerCard {
     min-width: 400px;
@@ -185,12 +197,12 @@
   }
 
   #cardTitle {
-    margin-top: 20px;
+    margin: 20px 0 5px;
     font-size: 1.5rem;
   }
 
   #quote {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 1.2rem;
   }
 
@@ -205,5 +217,9 @@
   #selectedFeeling {
     top: 25px;
     left: 35px;
+  }
+
+  #affirmationBtn {
+    font-size: 1.5rem;
   }
 }
