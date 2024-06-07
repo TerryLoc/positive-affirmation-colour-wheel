@@ -90,8 +90,8 @@
   max-height: 600px;
   --br-x: 50%;
   --br-y: 50%;
-  --br-i: 10px;
-  --br-j: 10px;
+  --br-i: 7px;
+  --br-j: 7px;
   border-top-left-radius: var(--br-i);
   border-bottom-left-radius: var(--br-j);
   border-top-right-radius: var(--br-x) var(--br-y);
@@ -105,7 +105,7 @@
   min-width: 200px;
   max-width: 500px;
   height: 10px;
-  margin-top: 3px;
+  margin: 3px 0;
   background-color: var(--transparent-bg);
   border-bottom: 1px solid var(--card-main);
   border-right: 1px solid var(--card-main);
@@ -121,6 +121,7 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   margin: auto 0;
+  font-weight: 650;
 }
 
 #selectedFeeling {

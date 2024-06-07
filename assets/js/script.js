@@ -199,4 +199,10 @@ async function fetchAffirmation() {
   } catch (error) {
     console.error('Error:The API is not responding', error);
   }
+
+  // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
+  const affirmationBtn = document.getElementById('affirmationBtn');
+  const cardH1 = document.getElementById('cardH1');
+  affirmationBtn.innerHTML = 'Screenshot';
+  cardH1.innerHTML = 'Screen Shot Your Card';
 }
