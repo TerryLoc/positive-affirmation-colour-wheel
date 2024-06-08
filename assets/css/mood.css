@@ -165,7 +165,7 @@
   align-items: center;
   flex-direction: column;
   margin: 30px 10px;
-  /* display: none; */
+  display: none;
 }
 
 #thankYouH1 {
