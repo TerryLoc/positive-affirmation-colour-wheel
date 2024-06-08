@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Hide the mood container and display the affirmation container
       mood.style.display = 'none';
-      affirmation.style.display = 'flex';
+      // affirmation.style.display = 'flex';
     });
   }
 
@@ -199,4 +199,28 @@ async function fetchAffirmation() {
   } catch (error) {
     console.error('Error:The API is not responding', error);
   }
+
+  // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
+  // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
+  const affirmationBtn = document.getElementById('affirmationBtn');
+  const cardH1 = document.getElementById('cardH1');
+  affirmationBtn.innerHTML = 'Screenshot';
+  cardH1.innerHTML = 'Screen Shot Your Card';
+
+  // Add event listener to the button
+  affirmationBtn.addEventListener('click', function () {
+    const card = document.getElementById('card');
+    html2canvas(card).then((canvas) => {
+      // Convert the canvas to a data URL
+      const imgData = canvas.toDataURL('image/jpg');
+
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = imgData;
+      link.download = 'screenshot.jpg';
+
+      // Download the image
+      link.click();
+    });
+  });
 }

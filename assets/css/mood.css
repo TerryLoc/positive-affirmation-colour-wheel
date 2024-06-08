@@ -90,12 +90,13 @@
   max-height: 600px;
   --br-x: 50%;
   --br-y: 50%;
-  --br-i: 10px;
-  --br-j: 10px;
+  --br-i: 7px;
+  --br-j: 7px;
   border-top-left-radius: var(--br-i);
   border-bottom-left-radius: var(--br-j);
   border-top-right-radius: var(--br-x) var(--br-y);
   border-bottom-right-radius: var(--br-x) var(--br-y);
+  box-shadow: 0 0 5px rgba(47, 47, 47, 0.7);
 }
 
 #lineArea {
@@ -105,7 +106,7 @@
   min-width: 200px;
   max-width: 500px;
   height: 10px;
-  margin-top: 3px;
+  margin: 3px 0;
   background-color: var(--transparent-bg);
   border-bottom: 1px solid var(--card-main);
   border-right: 1px solid var(--card-main);
@@ -116,11 +117,12 @@
   position: absolute;
   top: 10px;
   left: 5px;
-  color: var(--card-main);
-  text-shadow: 1px 1px 2px #ffffff;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  color: var(--font-color);
+  text-shadow: 1px 1px 3px var(--card-main);
+  writing-mode: vertical-rl !important;
+  text-orientation: upright !important;
   margin: auto 0;
+  font-weight: 650;
 }
 
 #selectedFeeling {
@@ -155,6 +157,23 @@
 .author {
   margin-top: 15px;
   text-transform: uppercase;
+}
+
+/* Thank You section */
+#container3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 10px;
+  /* display: none; */
+}
+
+#thankYouH1 {
+  padding: 20px 10px;
+}
+
+#thankYou {
+  max-width: 500px;
 }
 
 @media screen and (min-width: 768px) {
@@ -199,6 +218,12 @@
   #cardTitle {
     margin: 20px 0 5px;
     font-size: 1.5rem;
+  }
+
+  #lineArea {
+    min-width: 300px;
+
+    margin-left: 15px;
   }
 
   #quote {
