@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Hide the mood container and display the affirmation container
       mood.style.display = 'none';
-      affirmation.style.display = 'flex';
+      // affirmation.style.display = 'flex';
     });
   }
 

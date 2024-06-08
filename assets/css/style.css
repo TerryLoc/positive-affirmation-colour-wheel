@@ -62,14 +62,16 @@ main {
 }
 
 #container h1,
-#cardH1 {
+#cardH1,
+#thankYouH1 {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
   margin: 10px 0;
 }
 
-#container p {
+#container p,
+#thankYou p {
   --br-x: 30px;
   --br-y: 30px;
   border-top-right-radius: var(--br-x) var(--br-y);
@@ -140,31 +142,37 @@ main {
 
 @media screen and (min-width: 425px) {
   #container h1,
-  #cardH1 {
+  #cardH1,
+  #thankYouH1 {
     font-size: 150%;
   }
 
-  #container p {
+  #container p,
+  #thankYou p {
     font-size: 1.2rem;
   }
 
   #start-btn,
-  .onwards {
+  .onwards,
+  #screenshotBtn {
     font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   #container h1,
-  #cardH1 {
+  #cardH1,
+  #thankYouH1 {
     font-size: 2rem;
   }
 
-  #container p {
+  #container p,
+  #thankYou p {
     font-size: 1.5rem;
   }
 
-  #start-btn {
+  #start-btn,
+  .onwards {
     font-size: 1.5rem;
   }
 
