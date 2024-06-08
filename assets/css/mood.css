@@ -96,6 +96,7 @@
   border-bottom-left-radius: var(--br-j);
   border-top-right-radius: var(--br-x) var(--br-y);
   border-bottom-right-radius: var(--br-x) var(--br-y);
+  box-shadow: 0 0 5px rgba(47, 47, 47, 0.7);
 }
 
 #lineArea {
@@ -116,10 +117,10 @@
   position: absolute;
   top: 10px;
   left: 5px;
-  color: var(--card-main);
-  text-shadow: 1px 1px 2px #ffffff;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  color: var(--font-color);
+  text-shadow: 1px 1px 3px var(--card-main);
+  writing-mode: vertical-rl !important;
+  text-orientation: upright !important;
   margin: auto 0;
   font-weight: 650;
 }
@@ -200,6 +201,12 @@
   #cardTitle {
     margin: 20px 0 5px;
     font-size: 1.5rem;
+  }
+
+  #lineArea {
+    min-width: 300px;
+
+    margin-left: 15px;
   }
 
   #quote {
