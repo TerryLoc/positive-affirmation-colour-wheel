@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Hide the mood container and display the affirmation container
       mood.style.display = 'none';
-      // affirmation.style.display = 'flex';
+      affirmation.style.display = 'flex';
     });
   }
 
@@ -230,5 +230,9 @@ async function fetchAffirmation() {
       // Download the image
       link.click();
     });
+    const container2 = document.getElementById('container2');
+    const container3 = document.getElementById('container3');
+    container2.style.display = 'none';
+    container3.style.display = 'flex';
   });
 }
