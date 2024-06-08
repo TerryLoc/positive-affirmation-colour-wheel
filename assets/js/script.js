@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
     affirmationBtn.addEventListener('click', fetchAffirmation);
   }
 
+  // Return the home page when the home button is clicked
+  const homeBtn = document.getElementById('homeBtn');
+  if (homeBtn) {
+    homeBtn.addEventListener('click', function () {
+      window.location.href = 'index.html';
+    });
+  }
+
   // Check if the colourWheel object exists and if the moodButtons array has at least one element
   if (colourWheel && moodButtons.length > 0) {
     // Loop through each button in the moodButtons array
