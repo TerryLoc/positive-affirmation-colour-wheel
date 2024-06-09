@@ -191,8 +191,8 @@ async function fetchAffirmation() {
   const selectedFeeling = document.getElementById('selectedFeeling');
 
   // Display the selected mood and colour on the card
-  selectedFeeling.innerHTML = `${feeling}`;
-  selectedColour.innerHTML = `${colour}`;
+  selectedColour.innerHTML = `Hex Colour: ${colour}`;
+  selectedFeeling.innerHTML = `Positive Word: ${feeling}`;
 
   // Fetch the affirmation from the API
   try {
@@ -225,7 +225,7 @@ async function fetchAffirmation() {
       // Create a link element
       const link = document.createElement('a');
       link.href = imgData;
-      link.download = 'screenshot.jpg';
+      link.download = 'mood-card.jpg';
 
       // Download the image
       link.click();
