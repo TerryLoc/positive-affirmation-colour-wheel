@@ -225,7 +225,7 @@ async function fetchAffirmation() {
       // Create a link element
       const link = document.createElement('a');
       link.href = imgData;
-      link.download = 'screenshot.jpg';
+      link.download = 'mood-card.jpg';
 
       // Download the image
       link.click();

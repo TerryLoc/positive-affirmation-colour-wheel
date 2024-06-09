@@ -100,12 +100,10 @@
 }
 
 #lineArea {
-  position: absolute;
+  position: relative;
   top: 50;
-  left: 1;
-  min-width: 200px;
-  max-width: 500px;
-  height: 10px;
+  right: 15px;
+  height: 8px;
   margin: 3px 0;
   background-color: var(--transparent-bg);
   border-bottom: 1px solid var(--card-main);
