@@ -102,8 +102,8 @@
 #lineArea {
   position: relative;
   top: 50;
-  right: 15px;
   height: 8px;
+  width: 70%;
   margin: 3px 0;
   background-color: var(--transparent-bg);
   border-bottom: 1px solid var(--card-main);
@@ -112,23 +112,16 @@
 
 #selectedColour,
 #selectedFeeling {
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  color: var(--font-color);
+  color: var(--card-main);
   text-shadow: 1px 1px 3px var(--card-main);
-  writing-mode: vertical-rl !important;
-  text-orientation: upright !important;
-  margin: auto 0;
+  /* margin: auto 0; */
   font-weight: 650;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-#selectedFeeling {
-  top: 15px;
-  left: 30px;
-  letter-spacing: 4px;
-  text-orientation: mixed;
-  text-transform: uppercase;
+#selectedColour {
+  margin-top: 15px;
 }
 
 #cardTitle {
