@@ -191,7 +191,7 @@ async function fetchAffirmation() {
   const selectedFeeling = document.getElementById('selectedFeeling');
 
   // Display the selected mood and colour on the card
-  selectedColour.innerHTML = `Hex Colour: ${colour}`;
+  selectedColour.innerHTML = `Colour Code: ${colour}`;
   selectedFeeling.innerHTML = `Positive Word: ${feeling}`;
 
   // Fetch the affirmation from the API
