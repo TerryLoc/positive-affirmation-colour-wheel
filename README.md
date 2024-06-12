@@ -199,6 +199,26 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
 
 #### [AFFIRMATION SECTION](#affirmation-section)
 
+This section is accessed through the Onwards Button where the mood container is replaced by container2. This is archived with
+
+      mood.style.display = 'none';
+      affirmation.style.display = 'flex';
+
+within an <code>addEventListener('click', function () {});</code>.
+
+<table "width=100%; table-layout: fixed;">
+  <tr>
+    <th style="width: 30%;">Image</th>
+    <th style="width: 15%;">Feature</th>
+    <th style="width: 55%;">Info</th>
+  </tr>
+  <tr>
+    <td><img src="" style="width: 100%; max-width: 250px;"/></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 ![Generator]()
 
 #### [SCREENSHOT BUTTON](#screenshot-button)
