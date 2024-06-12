@@ -146,12 +146,15 @@ function getQuotesByMood(mood) {
   'Stressed': 'humor',
 };
 
-// 
+// Get the category that corresponds to the given mood from the moodToCategory object
 const category = moodToCategory[mood];
+
+// If the mood is not found in the moodToCategory object (i.e., category is undefined), throw an error
 if (!category) {
   throw new Error(`No category found for mood: ${mood}`);
 }
 
+// Return the API URL, inserting the category into the URL
 return `https://api.api-ninjas.com/v1/quotes?category=${category}`;
 }
 
