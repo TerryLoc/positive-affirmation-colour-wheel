@@ -140,7 +140,7 @@ function getQuotesByMood(mood) {
  const moodToCategory = {
   'Angry': 'forgiveness',
   'Anxious': 'courage',
-  'Empty': 'family',
+  'Empty': 'hope',
   'Overwhelmed': 'inspirational',
   'Sad': 'happiness',
   'Stressed': 'humor',
