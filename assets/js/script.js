@@ -128,36 +128,32 @@ function moodColourMsg() {
   colourChoice.innerHTML = `Feeling a bit ${mood} today? Let the colour <span style="color: ${colour}; text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%">${colourName}</span> embrace your soul and elevate your spirits with the embodiment of <span style='text-shadow: 1px 1px 2px #fbf4e6; font-size: 110%'>${feeling}</span>! Click the button below for your uplifting affirmation.`;
 }
 
-// function displayAffirmation() {
-//   const mood = localStorage.getItem('mood');
 
-//   switch (mood) {
-//     case 'Angry':
-//       fetchAffirmation('happiness');
-//       break;
-//     case 'Anxious':
-//       fetchAffirmation('sadness');
-//       break;
-//     case 'Empty':
-//       fetchAffirmation('anger');
-//       break;
-//     case 'Overwhelmed':
-//       fetchAffirmation('calmness');
-//       break;
-//     case 'Sad':
-//       fetchAffirmation('excitement');
-//       break;
-//     case 'Stressed':
-//       fetchAffirmation('stress');
-//       break;
-//     default:
-//       console.error('Mood not found');
-//   }
-// }
 
-// API URL
-const category = 'happiness';
-const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+// // API URL
+// const category = 'happiness';
+// const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+
+/** This function receives the parameter of the mood and then gets the url API that is inline with that information  */
+function getQuotesByMood(mood) {
+  // Map the mood to a category
+ const moodToCategory = {
+  'Angry': 'forgiveness',
+  'Anxious': 'courage',
+  'Empty': 'family',
+  'Overwhelmed': 'inspirational',
+  'Sad': 'happiness',
+  'Stressed': 'humor',
+};
+
+// 
+const category = moodToCategory[mood];
+if (!category) {
+  throw new Error(`No category found for mood: ${mood}`);
+}
+
+return `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+}
 
 // Options for the fetch request
 const options = {
@@ -176,6 +172,7 @@ async function fetchAffirmation() {
   const colour = localStorage.getItem('colour');
   const feeling = localStorage.getItem('feeling');
 
+
   // Get the colour from local storage
   const card = document.getElementById('innerCard');
   const lineArea = document.getElementById('lineArea');
@@ -183,10 +180,8 @@ async function fetchAffirmation() {
   card.style.backgroundColor = colour;
   lineArea.style.backgroundColor = colour;
 
-  // Display the selected mood and colour on the card
-  const yourMood = localStorage.getItem('mood');
-  const colourName = localStorage.getItem('colourName');
 
+  // Get the selected colour and mood elements from the DOM
   const selectedColour = document.getElementById('selectedColour');
   const selectedFeeling = document.getElementById('selectedFeeling');
 
@@ -196,6 +191,8 @@ async function fetchAffirmation() {
 
   // Fetch the affirmation from the API
   try {
+    // Get the URL for the selected mood
+    const url = getQuotesByMood(localStorage.getItem('mood'));
     const response = await fetch(url, options);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -205,10 +202,9 @@ async function fetchAffirmation() {
     quote.innerHTML = result[0].quote;
     author.innerHTML = result[0].author;
   } catch (error) {
-    console.error('Error:The API is not responding', error);
+    console.error(`Failed to fetch affirmation: ${error.message}`);
   }
 
-  // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
   // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
   const affirmationBtn = document.getElementById('affirmationBtn');
   const cardH1 = document.getElementById('cardH1');
@@ -230,6 +226,7 @@ async function fetchAffirmation() {
       // Download the image
       link.click();
     });
+    // Hide the card and display the final container
     const container2 = document.getElementById('container2');
     const container3 = document.getElementById('container3');
     container2.style.display = 'none';
