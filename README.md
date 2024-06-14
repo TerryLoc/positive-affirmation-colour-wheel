@@ -261,7 +261,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   [DeepAI](https://deepai.org/chat) - The image generator I used to create the logo.<br>
   [Favicon Generator](https://favicon.io) - Create favicons needed.<br>
   [Coolors](https://coolors.co/) - The colour palette generator I used to create the colour scheme.<br>
-  [ZenQuotes API](https://zenquotes.io/) - The API I used to fetch the affirmations.<br>
+  [API Ninjas](https://api-ninjas.com/api/quotes) - The API I used to fetch the affirmations/ quotes.<br>
   [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
   [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.
 
