@@ -32,8 +32,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#home-page">Home Page</a></li>
     <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
-    <li><a href="#affirmation-section">Affirmation Section</a></li>
-    <li><a href="#screenshot-button">Screenshot Button</a></li>
+    <li><a href="#affirmation-section">Affirmation & Screenshot Section</a></li>
   </ul>
 </details>
 
@@ -197,7 +196,7 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
   </tr>
 </table>
 
-#### [AFFIRMATION SECTION](#affirmation-section)
+#### [AFFIRMATION & SCREENSHOT SECTION](#affirmation-section)
 
 This section is accessed through the Onwards Button where the mood container is replaced by container2. This is archived with
 
@@ -206,6 +205,8 @@ This section is accessed through the Onwards Button where the mood container is 
 
 within an <code>addEventListener('click', function () {});</code>.
 
+This section also allow the user to take a screenshot of the affirmation and colour, so they can keep it with them.
+
 <table "width=100%; table-layout: fixed;">
   <tr>
     <th style="width: 30%;">Image</th>
@@ -213,19 +214,22 @@ within an <code>addEventListener('click', function () {});</code>.
     <th style="width: 55%;">Info</th>
   </tr>
   <tr>
-    <td><img src="" style="width: 100%; max-width: 250px;"/></td>
-    <td></td>
-    <td></td>
+    <td><img src="assets/images/Affirmaion section.png" style="width: 100%; max-width: 250px;"/></td>
+    <td>Affirmation greeting</td>
+    <td>The use is encouraged to click the button we use the <code>fetchAffirmation()</code> function to generate the card.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/screenshot section.png" style="width: 100%; max-width: 250px;"/></td>
+    <td>Final Card</td>
+    <td>The user then receives their card with the quote, colour and positive word. They click the screen hot button which save there card to keep with them. This is achieved with the built in function <code> html2canvas</code>.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/thank you message.png" style="width: 100%; max-width: 250px;"/></td>
+    <td>Thank you message</td>
+    <td>After the user has taken the screenshot they are thanked for using the app. This is controlled with <code>affirmationBtn.addEventListener('click', function () {});</code> function. From there the user can return to the home screen.</td>
+    
   </tr>
 </table>
-
-![Generator]()
-
-#### [SCREENSHOT BUTTON](#screenshot-button)
-
-This section will allow the user to take a screenshot of the affirmation and colour, so they can keep it with them.
-
-![Screenshot]()
 
 ### Features Left to Implement
 
