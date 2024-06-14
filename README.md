@@ -38,11 +38,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 
 <details>
   <summary>4. <a href="#technologies">Technologies</a></summary>
-  <ul>
-    <li><a href="#technology-1">Technology 1</a></li>
-    <li><a href="#technology-2">Technology 2</a></li>
-    <!-- Add more technologies as needed -->
-  </ul>
 </details>
 
 <details>
@@ -240,8 +235,6 @@ This section also allow the user to take a screenshot of the affirmation and col
 - <b>Idea 3:</b> Allow the user to keep track of their mood and affirmations. This would be a great way for the user to see how their mood has changed over time.
 
 ## [Technologies](#technologies)
-
-### Technology
 
 - ### Languages
 
