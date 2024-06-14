@@ -32,7 +32,8 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#home-page">Home Page</a></li>
     <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
-    <li><a href="#affirmation-section">Affirmation & Screenshot Section</a></li>
+    <li><a href="#affirmation-section">Affirmation & Screenshot</a></li>
+    <li><a href="#other-features">Other Features</a></li>
   </ul>
 </details>
 
@@ -196,7 +197,7 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
   </tr>
 </table>
 
-#### [AFFIRMATION & SCREENSHOT SECTION](#affirmation-section)
+#### [AFFIRMATION & SCREENSHOT](#affirmation-section)
 
 This section is accessed through the Onwards Button where the mood container is replaced by container2. This is archived with
 
@@ -231,9 +232,13 @@ This section also allow the user to take a screenshot of the affirmation and col
   </tr>
 </table>
 
-### Features Left to Implement
+### [Other Features](#other-features) that I would like to Implement:
 
-- Another feature idea:
+- <b>Idea 1:</b> I would like to add a feature that allows the user to share their card on social media. This would be a great way to spread the positivity and share the app with others.
+  <br><br>
+- <b>Idea 2:</b> One that allows the user to save their favourite cards to a gallery. This would be a great way for the user to keep track of their favourite cards.
+  <br><br>
+- <b>Idea 3:</b> Allow the user to keep track of their mood and affirmations. This would be a great way for the user to see how their mood has changed over time.
 
 ## [Technologies](#technologies)
 
