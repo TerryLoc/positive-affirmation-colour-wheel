@@ -231,9 +231,13 @@ This section also allow the user to take a screenshot of the affirmation and col
   </tr>
 </table>
 
-### Features Left to Implement
+### Features I would wish to Implement:
 
-- Another feature idea:
+- <b>Idea 1:</b> I would like to add a feature that allows the user to share their card on social media. This would be a great way to spread the positivity and share the app with others.
+  <br><br>
+- <b>Idea 2:</b> One that allows the user to save their favourite cards to a gallery. This would be a great way for the user to keep track of their favourite cards.
+  <br><br>
+- <b>Idea 3:</b> Allow the user to keep track of their mood and affirmations. This would be a great way for the user to see how their mood has changed over time.
 
 ## [Technologies](#technologies)
 
