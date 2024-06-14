@@ -32,8 +32,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#home-page">Home Page</a></li>
     <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
-    <li><a href="#affirmation-section">Affirmation & Screenshot</a></li>
-    <li><a href="#other-features">Other Features</a></li>
+    <li><a href="#affirmation--screenshot">Affirmation & Screenshot</a></li>
   </ul>
 </details>
 
@@ -197,7 +196,7 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
   </tr>
 </table>
 
-#### [AFFIRMATION & SCREENSHOT](#affirmation-section)
+#### [AFFIRMATION & SCREENSHOT](#affirmation--screenshot)
 
 This section is accessed through the Onwards Button where the mood container is replaced by container2. This is archived with
 
@@ -232,7 +231,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   </tr>
 </table>
 
-### [Other Features](#other-features) that I would like to Implement:
+### Other Features that I would like to Implement:
 
 - <b>Idea 1:</b> I would like to add a feature that allows the user to share their card on social media. This would be a great way to spread the positivity and share the app with others.
   <br><br>
@@ -241,6 +240,30 @@ This section also allow the user to take a screenshot of the affirmation and col
 - <b>Idea 3:</b> Allow the user to keep track of their mood and affirmations. This would be a great way for the user to see how their mood has changed over time.
 
 ## [Technologies](#technologies)
+
+### Technology
+
+- ### Languages
+
+  [HTML](https://www.w3schools.com/html/) - The markup language used to create the structure of the site.<br>
+  [CSS](https://www.w3schools.com/css/) - The styling language I used to style the site.<br>
+  [JavaScript](https://www.w3schools.com/js/) - The programming language to make the site interactive.
+
+- ### Platforms
+
+  [GitPod](https://www.gitpod.io/) - The platform I used to write the code and deployment.<br>
+  [Github](https://github.com/) - The platform I used to store the code and deploy the site.<br>
+  [VS Code](https://code.visualstudio.com/) - IDE for code editing / project development.
+
+- ### Other Tools
+
+  [Font Awesome](https://fontawesome.com/) - The icon library I used to add icons to the site.<br>
+  [DeepAI](https://deepai.org/chat) - The image generator I used to create the logo.<br>
+  [Favicon Generator](https://favicon.io) - Create favicons needed.<br>
+  [Coolors](https://coolors.co/) - The colour palette generator I used to create the colour scheme.<br>
+  [ZenQuotes API](https://zenquotes.io/) - The API I used to fetch the affirmations.<br>
+  [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
+  [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.
 
 ## [Testing](#testing)
 
