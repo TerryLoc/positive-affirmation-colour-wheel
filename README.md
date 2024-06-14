@@ -241,6 +241,30 @@ This section also allow the user to take a screenshot of the affirmation and col
 
 ## [Technologies](#technologies)
 
+### Technology
+
+- ### Languages
+
+  [HTML](https://www.w3schools.com/html/) - The markup language used to create the structure of the site.<br>
+  [CSS](https://www.w3schools.com/css/) - The styling language I used to style the site.<br>
+  [JavaScript](https://www.w3schools.com/js/) - The programming language to make the site interactive.
+
+- ### Platforms
+
+  [GitPod](https://www.gitpod.io/) - The platform I used to write the code and deployment.<br>
+  [Github](https://github.com/) - The platform I used to store the code and deploy the site.<br>
+  [VS Code](https://code.visualstudio.com/) - IDE for code editing / project development.
+
+- ### Other Tools
+
+  [Font Awesome](https://fontawesome.com/) - The icon library I used to add icons to the site.<br>
+  [DeepAI](https://deepai.org/chat) - The image generator I used to create the logo.<br>
+  [Favicon Generator](https://favicon.io) - Create favicons needed.<br>
+  [Coolors](https://coolors.co/) - The colour palette generator I used to create the colour scheme.<br>
+  [ZenQuotes API](https://zenquotes.io/) - The API I used to fetch the affirmations.<br>
+  [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
+  [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.
+
 ## [Testing](#testing)
 
 ### Validator Testing
