@@ -261,7 +261,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   [Coolors](https://coolors.co/) - The colour palette generator I used to create the colour scheme.<br>
   [API Ninjas](https://api-ninjas.com/api/quotes) - The API I used to fetch the affirmations/ quotes.<br>
   [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
-  [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.
+  [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.<br>
   [bytes.dev](https://bytes.dev/?s=amiresponsive) - The site I used to check the responsiveness of the site.
 
 ## [Testing](#testing)
