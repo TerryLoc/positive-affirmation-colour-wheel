@@ -112,7 +112,7 @@ I decided on the font Nunito for its mild, rounded corners, which I believe will
 
 [Google Fonts - Nunito](https://fonts.google.com/specimen/Nunito?preview.text=Beyong&query=Nunito)
 
-<img src="assets/images/Nunito-Font-Family.jpg" alt="Website Font" width="500px"/>
+<img src="assets/images/readme-images/nunito-font-family.jpg" alt="Website Font" width="500px"/>
 
 #### [ICONS](#icons)
 
@@ -122,13 +122,13 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 - Instagram
 - TikTok
 
-<img src="assets/images/social-links.png" alt="Site links" width="500px"/>
+<img src="assets/images/readme-images/social-links.png" alt="Site links" width="500px"/>
 
 #### [COLOURS](#colours)
 
 I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious colour scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colours, warding off overwhelming visual stimuli. To attain the deeper blue tone <code>#2A495F</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
 
-<img src="assets/images/new-btm-colours.png" alt="Website colours" width="500px"/>
+<img src="assets/images/readme-images/new-btm-colours.png" alt="Website colours" width="500px"/>
 
 #### [LOGO](#logo)
 
@@ -144,13 +144,13 @@ The logo was created with the help of [deep AI](https://deepai.org/machine-learn
 
 On the landing page I decided to greet the user with an upbeat message that explains what the app/ site will offer. I hope for the user to be feeling a little bit more positive and intrigued before they navigate to the application part of the site.
 
-<img src="assets/images/home-page.png" alt="landing page" width="500px"/>
+<img src="assets/images/readme-images/home-page.png" alt="landing page" width="500px"/>
 
 <br>
 
 When they hover over the 'Lets Get Started' button it has an effect of lighting up. This is to give the impression of lighting the way for the user to follow. The navigation for the button is controlled by <code>addEventListener('click' function {})</code>
 
-<img src="assets/images/lgs-button.png" alt="Button to navigate to mood page" width="300px"/>
+<img src="assets/images/readme-images/lgs-button.png" alt="Button to navigate to mood page" width="300px"/>
 
 <br>
 
@@ -165,27 +165,27 @@ This is the colour wheel area of the <code>mood.html</code> page where the user 
     <th style="width: 55%;">Info</th>
   </tr>
   <tr>
-    <td><img src="assets/images/colour-wheel-area.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/colour-wheel-area.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Wheel page</td>
     <td>The colour wheel area is set out with the mood buttons wheel section and the return message area.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/mood-selection.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/mood-selection.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Mood Selection</td>
     <td>The user picks from six different moods that can affect us all every day. Here we use <code>fetch('coloursAndFeelings.json')</code> to get the info from the JSON. The mood button corresponds to the same mood in the JSON.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/colour-wheel.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/colour-wheel.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Colour Wheel</td>
     <td>After the user selects a mood, the wheel applies <code>applyColours(Object.values(coloursAndFeelings[mood]));</code> Each mood has 6 different colours.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/message-reply.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/message-reply.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Message & colour display</td>
     <td>When the spin class finishes with the <code>setTimeout(() => {})</code> function, the user is presented with a message relating to the random colour. This is achieved with the <code>moodColourMsg()</code> function.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/onwards-button.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/onwards-button.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Onwards Button</td>
     <td>The onwards button takes the user to the affirmation section of the mood app. This is controlled with an <code>onwardsBtn.addEventListener('click', function () {})</code>. It also gives the user a feel of lighting the way, the same as the button on the home page.</td>
   </tr>
@@ -209,17 +209,17 @@ This section also allow the user to take a screenshot of the affirmation and col
     <th style="width: 55%;">Info</th>
   </tr>
   <tr>
-    <td><img src="assets/images/Affirmaion section.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/affirmaion-section.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Affirmation greeting</td>
     <td>The use is encouraged to click the button we use the <code>fetchAffirmation()</code> function to generate the card.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/screenshot section.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/screenshot-section.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Final Card</td>
     <td>The user then receives their card with the quote, colour and positive word. They click the screen hot button which save there card to keep with them. This is achieved with the built in function <code> html2canvas</code>.</td>
   </tr>
   <tr>
-    <td><img src="assets/images/thank you message.png" style="width: 100%; max-width: 250px;"/></td>
+    <td><img src="assets/images/readme-images/thank-you-message.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Thank you message</td>
     <td>After the user has taken the screenshot they are thanked for using the app. This is controlled with <code>affirmationBtn.addEventListener('click', function () {});</code> function. From there the user can return to the home screen.</td>
     
