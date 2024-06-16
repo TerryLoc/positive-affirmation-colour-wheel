@@ -4,7 +4,7 @@
 
 This Positive Affirmation and Color Wheel app is designed to uplift your mood and bring positivity into your day. By seamlessly integrating the ZenQuotes API, it fetches and displays inspiring affirmations to motivate and encourage you. The app also features an interactive color wheel, allowing you to select colors that resonate with your current mood. The chosen color updates the background, creating a personalized and visually appealing experience. Additionally, with a built-in screenshot functionality powered by the `html2canvas` library, you can capture and save these moments of positivity, making it easy to revisit or share them with others. Whether you're looking for daily motivation or a splash of color to brighten your day, this app combines the power of positive words and color therapy into a simple, user-friendly tool.
 
-<img src="a" alt="appearance" width="500px" margin=" 0 auto"/>
+<img src="assets/images/readme-images/responsive-design.png" alt="appearance" width="500px" margin=" 0 auto"/>
 
 ## Table of Content
 
@@ -262,6 +262,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   [API Ninjas](https://api-ninjas.com/api/quotes) - The API I used to fetch the affirmations/ quotes.<br>
   [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
   [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.
+  [bytes.dev](https://bytes.dev/?s=amiresponsive) - The site I used to check the responsiveness of the site.
 
 ## [Testing](#testing)
 
