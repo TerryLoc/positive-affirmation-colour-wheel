@@ -215,7 +215,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   </tr>
   <tr>
     <td><img src="assets/images/readme-images/screenshot-section.png" style="width: 100%; max-width: 250px;"/></td>
-    <td>Final Card</td>
+    <td>Final card preview</td>
     <td>The user then receives their card with the quote, colour and positive word. They click the screen hot button which save there card to keep with them. This is achieved with the built in function <code> html2canvas</code>.</td>
   </tr>
   <tr>
@@ -223,6 +223,11 @@ This section also allow the user to take a screenshot of the affirmation and col
     <td>Thank you message</td>
     <td>After the user has taken the screenshot they are thanked for using the app. This is controlled with <code>affirmationBtn.addEventListener('click', function () {});</code> function. From there the user can return to the home screen.</td>
     
+  </tr>
+  <tr>
+    <td><img src="assets/images/readme-images/mood-card.jpg" style="width: 100%; max-width: 250px;"/></td>
+    <td>Mood card screenshot</td>
+    <td>This is an example of the screenshot card that is saved to the users download folder in either there mobile device or computer.</td>
   </tr>
 </table>
 
