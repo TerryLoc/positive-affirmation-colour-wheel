@@ -45,43 +45,66 @@ function toggleMoodAndAffirmation() {
   affirmation.style.display = 'flex';
 }
 
-// Function to handle the mood button click event and display the colour wheel
+/**
+ * Handles the mood button click event.
+ * @param {HTMLElement} button - The button element that was clicked.
+ * @param {HTMLElement} colourWheel - The element representing the color wheel.
+ */
 function handleMoodClick(button, colourWheel) {
+  // Fetch the JSON file containing colors and feelings data.
   fetch('coloursAndFeelings.json')
-    .then((response) => response.json())
+    .then((response) => response.json()) // Parse the JSON file into a JavaScript object.
     .then((coloursAndFeelings) => {
+      // Get the mood from the clicked button's data attribute.
       const mood = button.getAttribute('data-mood');
+
+      // Store the selected mood in local storage.
       localStorage.setItem('mood', mood);
 
+      // Clear any existing content in the message element.
       const message = document.getElementById('colourChoice');
       message.innerHTML = '';
 
+      // Apply the colors associated with the selected mood.
       applyColours(Object.values(coloursAndFeelings[mood]));
 
+      // Add a spinning animation to the color wheel.
       colourWheel.classList.add('spin');
 
+      // Set a timeout to stop the spinning and select a random color.
       setTimeout(() => {
+        // Get the colors and their names associated with the selected mood.
         const colorsKeys = Object.entries(coloursAndFeelings[mood]);
+
+        // Select a random color from the list of mood colors.
         const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
         const randomColourName = randomEntry[0];
         const randomColour = randomEntry[1];
 
+        // Remove the spinning animation from the color wheel.
         colourWheel.classList.remove('spin');
+
+        // Set the background color of the color wheel to the randomly selected color.
         colourWheel.style.background = randomColour.hex;
 
-        // Store the colour name, colour, and feeling in local storage
+        // Store the selected color name, color hex value, and associated feeling in local storage.
         localStorage.setItem('colourName', randomColourName);
         localStorage.setItem('colour', randomColour.hex);
         localStorage.setItem('feeling', randomColour.feeling);
 
+        // Call a function to display a message about the selected mood and color.
         moodColourMsg();
-      }, 3000);
+      }, 3000); // Set the delay for 3 seconds to match the spinning animation duration.
     });
 }
-// Add event listener to each mood button
+
+// Check if the colourWheel element exists and if there are any mood buttons.
 if (colourWheel && moodButtons.length > 0) {
+  // Iterate over each mood button.
   moodButtons.forEach((button) => {
+    // Add a click event listener to each button.
     button.addEventListener('click', function () {
+      // Call the handleMoodClick function when the button is clicked, passing the button and colourWheel as arguments.
       handleMoodClick(button, colourWheel);
     });
   });

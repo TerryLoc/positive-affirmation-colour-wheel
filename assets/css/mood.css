@@ -114,8 +114,8 @@
 #selectedFeeling {
   color: var(--card-main);
   text-shadow: 1px 1px 3px var(--card-main);
-  /* margin: auto 0; */
   font-weight: 650;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
