@@ -19,13 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
     'click',
     () => (window.location.href = 'mood.html')
   );
-  // Add event listener to the onwards button
+  // Add event listener to the onwards button to move from mood to affirmation container
   addEventListenerToElement(onwardsBtn, 'click', toggleMoodAndAffirmation);
 
   // Add event listener to the affirmation button
   addEventListenerToElement(
     document.getElementById('affirmationBtn'),
     'click',
+    // Call the fetchAffirmation function when the button is clicked
     fetchAffirmation
   );
   // Add event listener to the home button
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function toggleMoodAndAffirmation() {
   const mood = document.getElementById('container');
   const affirmation = document.getElementById('container2');
-
+  // Hide the mood container and display the affirmation container
   mood.style.display = 'none';
   affirmation.style.display = 'flex';
 }
@@ -173,7 +174,7 @@ function getQuotesByMood(mood) {
   }
 
   // Return the API URL, inserting the category into the URL
-  return `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+  return `https://api.api-ninjas.com/v/quotes?category=${category}`;
 }
 
 // Options for the fetch request
@@ -217,22 +218,30 @@ async function fetchAffirmation() {
 
     if (!response.ok) {
       debugger;
-
+      // If the response is not ok, throw an error with the status
       throw new Error(`HTTP error! status: ${response.status}`);
     } else {
+      // Parse the response into a JavaScript object and store it in the result variable
       result = await response.json();
       // Display the affirmation and author to DOM
       quote.innerHTML = result[0].quote;
       author.innerHTML = result[0].author;
     }
   } catch (error) {
-    // Display the affirmation and author to the console
-    console.error(`Failed to fetch affirmation: ${error.message}`);
     // Backup affirmations in case the API fails
-    result = backupQuotes[Math.floor(Math.random() * backupQuotes.length)];
-    // Display the affirmation and author to DOM
-    quote.innerHTML = result[0].quote;
-    author.innerHTML = result[0].author;
+    fetch('backupQuotes.json')
+      .then((response) => response.json())
+      .then((backupQuotes) => {
+        console.log(backupQuotes);
+        // Display the affirmation and author to the console
+        console.error(`Failed to fetch affirmation: ${error.message}`);
+        // Backup affirmations in case the API fails
+        const result =
+          backupQuotes[Math.floor(Math.random() * backupQuotes.length)];
+        // Display the affirmation and author to DOM
+        quote.innerHTML = result.quote;
+        author.innerHTML = result.author;
+      });
   }
 
   // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
