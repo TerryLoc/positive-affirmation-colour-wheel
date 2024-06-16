@@ -53,7 +53,7 @@ function toggleMoodAndAffirmation() {
  */
 function handleMoodClick(button, colourWheel) {
   // Fetch the JSON file containing colors and feelings data.
-  fetch('coloursAndFeelings.json')
+  fetch('assets/json/coloursAndFeelings.json')
     .then((response) => response.json()) // Parse the JSON file into a JavaScript object.
     .then((coloursAndFeelings) => {
       // Get the mood from the clicked button's data attribute.
@@ -229,7 +229,7 @@ async function fetchAffirmation() {
     }
   } catch (error) {
     // Backup affirmations in case the API fails
-    fetch('backupQuotes.json')
+    fetch('assets/json/backupQuotes.json')
       .then((response) => response.json())
       .then((backupQuotes) => {
         console.log(backupQuotes);
