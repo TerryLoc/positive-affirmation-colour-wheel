@@ -174,7 +174,7 @@ function getQuotesByMood(mood) {
   }
 
   // Return the API URL, inserting the category into the URL
-  return `https://api.api-ninjas.com/v/quotes?category=${category}`;
+  return `https://api.api-ninjas.com/v1/quotes?category=${category}`;
 }
 
 // Options for the fetch request
