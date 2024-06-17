@@ -2,7 +2,7 @@
 
 # BEYOND THE MOOD
 
-This Positive Affirmation and Color Wheel app is designed to uplift your mood and bring positivity into your day. By seamlessly integrating the ZenQuotes API, it fetches and displays inspiring affirmations to motivate and encourage you. The app also features an interactive color wheel, allowing you to select colors that resonate with your current mood. The chosen color updates the background, creating a personalized and visually appealing experience. Additionally, with a built-in screenshot functionality powered by the `html2canvas` library, you can capture and save these moments of positivity, making it easy to revisit or share them with others. Whether you're looking for daily motivation or a splash of color to brighten your day, this app combines the power of positive words and color therapy into a simple, user-friendly tool.
+This Positive Affirmation and Colour Wheel app is designed to uplift your mood and bring positivity into your day. By seamlessly integrating the API Ninjas, it fetches and displays inspiring affirmations to motivate and encourage you. The app also features an interactive colour wheel, that resonate with your current mood. The chosen colour updates the card, creating a personalized and visually appealing experience. Additionally, with a built-in screenshot functionality powered by the `html2canvas` library, you can capture and save these moments of positivity, making it easy to revisit or share them with others. Whether you're looking for daily motivation or a splash of colour to brighten your day, this app combines the power of positive words and colour therapy into a simple, user-friendly tool.
 
 Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-affirmation-colour-wheel/)
 
@@ -65,15 +65,15 @@ Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-a
 
 ### A SHORT BRIEF
 
-Sometimes we dream to have a companion who personally uplifts our moods? Well, that idea is what my app/website is all about – a fun filled and inspiring corner of the interweb where sadness is shaken off, and happiness sought. By incorporating little-comedic touches here and there, loads of bright colors, plus a dose of positive energy, I intend to help the user smile away there clouding mood.
+Sometimes we dream to have a companion who personally uplifts our moods? Well, that idea is what my app/website is all about – a fun filled and inspiring corner of the interweb where sadness is shaken off, and happiness sought. By incorporating loads of bright colours, plus a dose of positive energy, I intend to help the user smile away there clouding mood.
 
 #### [USER VIEW](#user-view)
 
-1.  As a person, I want to receive uplifting and galvanising colourings to help me shift my mood and attitude, so I can feel more fine and empowered during the day.
-
-2.  As a consumer struggling with anxiety or depression, I need to get admission to a secure and supportive website wherein I can discover consolation and reassurance, so I can sense much less isolated.
-
-3.  As a user seeking out a every day select-me-up, I want to discover a curated series of amusing and uplifting content material, along with wonderful affirmations so I can begin my day on a high word and experience extra energised and influenced.
+| User Story                                                                                                                                                                                             | Acceptance Criteria                                                                                                                   | Scenario |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| As a person, I want to receive uplifting and galvanising colourings to help me shift my mood and attitude, so I can feel more fine and empowered during the day.                                       | The user can select a mood from the six options available and receive a colour and affirmation that resonates with their chosen mood. | Passed   |
+| As a consumer struggling with anxiety or depression, I need to get admission to a secure and supportive website wherein I can discover consolation and reassurance, so I can sense much less isolated. | The user can access the site and receive positive affirmations that help them feel supported and less alone.                          | Passed   |
+| As a user seeking out an every day series of amusing and uplifting content material, along with wonderful colours so I can begin my day on a high word and experience extra energised and influenced.  | The user can visit the site daily to receive a new affirmation and colour that uplifts their mood and energizes them for the day.     | Passed   |
 
 ## [Visual Design](#visual-design)
 
@@ -81,7 +81,7 @@ Sometimes we dream to have a companion who personally uplifts our moods? Well, t
 
 This is a simple flow chart that outlines the orientation of the site and what way the user will navigate from section to section.
 
-<img src="assets/images/positive affirmation colour wheel  flow chat.png" alt="Flow chart" width="500px"/>
+<img src="assets/images/readme-images/flow-chat.png" alt="Flow chart" width="500px"/>
 
 #### [WIREFRAMES](#wireframes)
 
@@ -101,7 +101,7 @@ I decided on the font Nunito for its mild, rounded corners, which I believe will
 
 #### [ICONS](#icons)
 
-The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon library using the <<i>i</i>> tag. They are utalised in the footer.
+The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon library using the <<i>i</i>> tag. They are utilized in the footer.
 
 - X / Twitter
 - Instagram
@@ -111,7 +111,7 @@ The icons I used are from the [Fontawesome](https://fontawesome.com/) Icon libra
 
 #### [COLOURS](#colours)
 
-I utilised the colouration palette generator [coolors](https://coolors.co) to create a harmonious colour scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colours, warding off overwhelming visual stimuli. To attain the deeper blue tone <code>#2A495F</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
+I utilized the colouration palette generator [coolors](https://coolors.co) to create a harmonious colour scheme for the site. I aimed to create a welcoming surroundings via restricting the palette to a few key colours, warding off overwhelming visual stimuli. To attain the deeper blue tone <code>#2A495F</code>, I integrated the usage of a transparent <code>rgba(3, 3, 3, 0.2)</code> to obtain the desired impact.
 
 <img src="assets/images/readme-images/new-btm-colours.png" alt="Website colours" width="500px"/>
 
