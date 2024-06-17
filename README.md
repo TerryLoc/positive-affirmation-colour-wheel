@@ -4,6 +4,9 @@
 
 This Positive Affirmation and Color Wheel app is designed to uplift your mood and bring positivity into your day. By seamlessly integrating the ZenQuotes API, it fetches and displays inspiring affirmations to motivate and encourage you. The app also features an interactive color wheel, allowing you to select colors that resonate with your current mood. The chosen color updates the background, creating a personalized and visually appealing experience. Additionally, with a built-in screenshot functionality powered by the `html2canvas` library, you can capture and save these moments of positivity, making it easy to revisit or share them with others. Whether you're looking for daily motivation or a splash of color to brighten your day, this app combines the power of positive words and color therapy into a simple, user-friendly tool.
 
+Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-affirmation-colour-wheel/)
+
+
 <img src="assets/images/readme-images/responsive-design.png" alt="appearance" width="500px" margin=" 0 auto"/>
 
 ## Table of Content
@@ -46,16 +49,11 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#lighthouse-testing">Lighthouse Testing</a></li>
     <li><a href="#manual-testing">Manual Testing</a></li>
-    <li><a href="#integration-tests">Integration Tests</a></li>
   </ul>
 </details>
 
 <details>
   <summary>6. <a href="#deployment">Deployment</a></summary>
-  <ul>
-    <li><a href="#deployment-steps">Deployment Steps</a></li>
-    <li><a href="#environment-setup">Environment Setup</a></li>
-  </ul>
 </details>
 
 <details>
@@ -464,7 +462,46 @@ On the lighthouse testing I received a score of close to 100% on all the pages. 
 
 ### Unfixed Bugs
 
-## Deployment
+
+
+## [Deployment](#deployment)
+
+This project is deployed using GitHub Pages. This section provides information on how to deploy & as a reference for future deployments.
+
+### Accessing the Deployed Website
+
+To access click on the link and visit [Beyond The Mood](https://terryloc.github.io/positive-affirmation-colour-wheel/).
+
+### How to clone a repository
+
+1. Fork the repository by clicking the "Fork" button at the top of the repository page.
+2. Clone the forked repository to your local machine using the `git clone` command.
+   ```
+   git clone https://github.com/your-username/positive-affirmation-colour-wheel.git
+   ```
+3. Make any necessary changes or updates to the project.
+4. Commit your changes and push them to your GitHub repository.
+   ```
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+5. Navigate to the repository settings on GitHub.
+6. Under the GitHub Pages section, choose the main branch as the source and save the changes.
+7. Your site will be published and accessible at `https://github.com/TerryLoc/positive-affirmation-colour-wheel.git`.
+
+### How to deploy locally
+
+To deploy a GitHub repository to your local computer by downloading it, follow these steps:
+
+1. Go to the GitHub repository that you want to deploy.
+2. Click on the green "Code" button located on the right side of the repository.
+3. In the dropdown menu, select the "Download ZIP" option.
+4. Once the ZIP file is downloaded, extract its contents to a location on your local computer.
+5. Open your preferred code editor and navigate to the folder where you extracted the repository.
+6. You can now make changes to the code and work on the project locally.
+
+Please note that this method will not allow you to easily sync changes between your local repository and the GitHub repository. If you want to push changes back to the GitHub repository, it is recommended to use git commands and set up a local git repository for the project.
 
 ## Credits
 
