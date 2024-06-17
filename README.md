@@ -438,6 +438,8 @@ On the lighthouse testing I received a score of close to 100% on all the pages. 
 | Home         | Desktop | ![screenshot](assets/images/testing-images/home-desktop.png) | 100% all around |
 | Mood section | Mobile  | ![screenshot](assets/images/testing-images/mood-mobile.png)  | No warnings     |
 | Mood section | Desktop | ![screenshot](assets/images/testing-images/mood-desktop.png) | No warnings     |
+| 404 page     | Mobile  | ![screenshot](assets/images/testing-images/404-mobile.png)   | No warnings     |
+| 404 page     | Desktop | ![screenshot](assets/images/testing-images/404-desktop.png)  | 100% all around |
 
 ## [Manual Testing](#manual-testing)
 
