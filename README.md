@@ -446,7 +446,18 @@ On the lighthouse testing I received a score of close to 100% on all the pages. 
   - **Desktop**: Chrome, Brave, Safari
   - **Tablet**: iPad
   - **Mobile**: iPhone 12, Samsung Galaxy s10, Realme GT 2
+  
+  Testing was done on the following features:
 
+| Page                | Button              | Notes                                 | Result   |
+| ------------------- | ------------------- | ------------------------------------- | -------- |
+| Home                | Lets Get Started    | Brings user to mood page              | Pass     |
+| Mood Section        | Six different moods | Activates the wheel & colour function | All Pass |
+| Mood section        | Onwards             | Navigates to Mood card                | Pass     |
+| Affirmation section | Affirmation         | Call API function                     | Pass     |
+| Affirmation section | Screenshot          | Downloads screenshot of card          | Pass     |
+| Thank you           | Home                | Navigates to home page                | Pass     |
+| 404 Page            | Home Page           | Returns user to home page             | Pass     |
 
 
 ### Unfixed Bugs
