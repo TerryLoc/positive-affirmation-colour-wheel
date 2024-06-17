@@ -49,6 +49,7 @@ Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-a
   <ul>
     <li><a href="#lighthouse-testing">Lighthouse Testing</a></li>
     <li><a href="#manual-testing">Manual Testing</a></li>
+    <li><a href="#unfixed-bugs">Unfixed Bugs</a></li>
   </ul>
 </details>
 
@@ -57,19 +58,7 @@ Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-a
 </details>
 
 <details>
-  <summary>7. <a href="#credits">Credits</a></summary>
-  <ul>
-    <li><a href="#contributor-1">Contributor 1</a></li>
-    <li><a href="#contributor-2">Contributor 2</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>8. <a href="#author">Author</a></summary>
-  <ul>
-    <li><a href="#author-name">Author Name</a></li>
-    <li><a href="#author-bio">Author Bio</a></li>
-  </ul>
+  <summary>7. <a href="#author">Author</a></summary>
 </details>
 
 ## [User Stories](#user-stories)
@@ -439,7 +428,7 @@ On the lighthouse testing I received a score of close to 100% on all the pages. 
 | 404 page     | Mobile  | ![screenshot](assets/images/testing-images/404-mobile.png)   | No warnings     |
 | 404 page     | Desktop | ![screenshot](assets/images/testing-images/404-desktop.png)  | 100% all around |
 
-## [Manual Testing](#manual-testing)
+### [Manual Testing](#manual-testing)
 
   After testing the site on multiple devices and browsers, I found that the site was responsive and worked well on all devices. The site was tested on the following devices and browsers:
 
@@ -460,7 +449,21 @@ On the lighthouse testing I received a score of close to 100% on all the pages. 
 | 404 Page            | Home Page           | Returns user to home page             | Pass     |
 
 
-### Unfixed Bugs
+### [Unfixed Bugs](#unfixed-bugs)
+
+The only two bugs that I was unable to fix are an issue with the final screenshot and the <code>window.scrollTo</code> function.
+
+- HERE IS AN EXAMPLE OF THE BUG ONE:
+
+ | Before Screenshot                                     | After Screenshot                                   |
+ | ----------------------------------------------------- | -------------------------------------------------- |
+ | ![Before](assets/images/testing-images/site-card.png) | ![After](assets/images/testing-images/ss-card.jpg) |
+
+  The issue was that the screenshot was not saving the card with the correct styling. I tried to fix this by adding the `useCORS: true` to the `html2canvas` function, but this did not work. I also tried to add the `allowTaint: true` to the function, but this also did not work.
+
+- HERE IS BUG TWO:
+
+  The <code>window.scrollTo</code> function was not working as expected. I tried to fix this by adding the <code>scrollTo(0, 0)</code> to the function, but this did not work. It will not scroll to the bottom of the page as expected on desktop and only work sometimes on mobile.
 
 
 
@@ -503,13 +506,12 @@ To deploy a GitHub repository to your local computer by downloading it, follow t
 
 Please note that this method will not allow you to easily sync changes between your local repository and the GitHub repository. If you want to push changes back to the GitHub repository, it is recommended to use git commands and set up a local git repository for the project.
 
-## Credits
+## [Author](#author)
 
-### Content Summary
+### Terry Loughran
+- GitHub: [TerryLoc](https://github.com/TerryLoc)
+- LinkedIn: [Terence (Terry) Loughran](https://www.linkedin.com/in/terryloughran/)
+
+### A Small Wrap-up Summary
 
 Good vibes all round! The affirmations come from API Ninjas, which provides a extensive type of nice and motivational messages to inspire clients. Affirmations are displayed in an smooth, uncluttered format that makes it clean for users to acquire uplifting content material. Quotes are randomly generated every time a person clicks the "Get Affirmation" button, ensuring a clean and unique experience with each visit. Designed to inspire users to embrace positivity.
-
-### Other General Project Advice
-
-
-[def]: 404pag
