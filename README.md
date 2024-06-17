@@ -262,11 +262,17 @@ This section also allow the user to take a screenshot of the affirmation and col
   [API Ninjas](https://api-ninjas.com/api/quotes) - The API I used to fetch the affirmations/ quotes.<br>
   [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
   [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.<br>
-  [bytes.dev](https://bytes.dev/?s=amiresponsive) - The site I used to check the responsiveness of the site.
-
+  [bytes.dev](https://bytes.dev/?s=amiresponsive) - The site I used to check the responsiveness of the site.<br>
+  [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.<br>
+  [ChatGPT](https://chatgpt.com/) - I used chatGPT to generate the backup json file with the positive affirmations.
 ## [Testing](#testing)
 
 ### Validator Testing
+
+- [W3C HTML Validator](https://validator.w3.org/) -- No errors or warnings to shown on index or mood HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) -- There where no errors on either style or mood CSS.<br><img src="assets/images/readme-images/css-result.png"/>
+- [JSHint](https://jshint.com/) - [Results](https://jshint.com/) - No errors or warnings to show.
+- [WebAIM](https://wave.webaim.org/) - [Results](https://wave.webaim.org/report#/https://jamesmudidi.github.io/positive-affirmation-colour-wheel/) - No errors or warnings to show.
 
 ### Unfixed Bugs
 
@@ -274,8 +280,8 @@ This section also allow the user to take a screenshot of the affirmation and col
 
 ## Credits
 
-### Content
+### Content Summary
 
-Good vibes only! The affirmations and quotes are sourced from API Ninjas, which provides a wide range of positive and motivational messages to inspire users. The affirmations are displayed in a clean, easy-to-read format, making it simple for users to absorb the uplifting content. The affirmations are randomly generated each time the user clicks the "Get Affirmation" button, ensuring a fresh and unique experience with each visit. The quotes are designed to encourage users to embrace positivity
+Good vibes all round! The affirmations come from API Ninjas, which provides a extensive type of nice and motivational messages to inspire clients. Affirmations are displayed in an smooth, uncluttered format that makes it clean for users to acquire uplifting content material. Quotes are randomly generated every time a person clicks the "Get Affirmation" button, ensuring a clean and unique experience with each visit. Designed to inspire users to embrace positivity.
 
-## Other General Project Advice
+### Other General Project Advice
