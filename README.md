@@ -275,7 +275,7 @@ This section also allow the user to take a screenshot of the affirmation and col
 ### JavaScript Validation 
 - [JSHint](https://jshint.com/) -- No errors. All warnings shown are in regards to available in ES6.
 
-<B>On applying the JSHint to the JavaScript file, I realised that two of my where to big and needed to be broken down:</B>
+<B>On applying the JSHint to the JavaScript file, I realised that two of my functions where to big and I needed to break them down:</B>
 
 #### REFACTORING OF TWO FUNCTIONS
 
