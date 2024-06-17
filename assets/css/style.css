@@ -1,12 +1,14 @@
+/* Google font import for Nunito */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Root variables for global theme colors */
 :root {
   --font-color: #fbf4e6;
   --bg-color: #325570;
   --transparent-bg: #03030333;
 }
 
-/* generic styling */
+/* Generic styling for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +17,13 @@
   font-family: 'Nunito', sans-serif;
 }
 
+/* Styling for logo */
 .logo {
   width: 120px;
   height: 120px;
 }
 
+/* Body styling */
 body {
   display: flex;
   flex-direction: column;
@@ -29,7 +33,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header style */
+/* Header styling */
 header {
   display: flex;
   justify-content: center;
@@ -37,13 +41,15 @@ header {
   padding: 10px 10%;
   background-color: var(--transparent-bg);
 }
-/*main style */
+
+/* Main section styling */
 main {
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
 }
 
+/* Container styling */
 #container {
   font-size: 120%;
   display: flex;
@@ -53,14 +59,15 @@ main {
   padding: 20px;
   margin-top: 10px;
   width: 80%;
-  /* display: none; */
 }
 
+/* About section styling */
 #about {
   display: flex;
   justify-content: center;
 }
 
+/* Heading styling inside container, card, and thank you sections */
 #container h1,
 #cardH1,
 #thankYouH1 {
@@ -70,8 +77,10 @@ main {
   margin: 10px 0;
 }
 
+/* Paragraph styling inside container and thank you sections */
 #container p,
 #thankYou p {
+  /* Curve the top right and top left corners */
   --br-x: 30px;
   --br-y: 30px;
   border-top-right-radius: var(--br-x) var(--br-y);
@@ -83,8 +92,10 @@ main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Button styling for start and onwards buttons */
 #start-btn,
 .onwards {
+  /* Curve the bottom right and bottom left corners */
   --br-x: 20px;
   --br-y: 20px;
   border-bottom-right-radius: var(--br-x) var(--br-y);
@@ -99,6 +110,7 @@ main {
   transition: box-shadow 0.2s ease;
 }
 
+/* Hover effect for start, mood, and onwards buttons */
 #start-btn:hover,
 .mood-btn:hover,
 .onwards:hover {
@@ -107,12 +119,13 @@ main {
   box-shadow: 0 0 25px var(--font-color);
 }
 
+/* Active state for start and onwards buttons */
 #start-btn:active,
 .onwards:active {
   transform: scale(0.95);
 }
 
-/* footer style */
+/* Footer styling */
 #footer {
   width: 100%;
   max-height: 400px;
@@ -124,22 +137,26 @@ main {
   background-color: var(--transparent-bg);
 }
 
+/* Paragraph styling inside footer */
 #footer p {
   font-size: 0.8rem;
   text-align: center;
 }
 
+/* Link styling inside footer */
 .links {
   display: flex;
   gap: 30px;
 }
 
+/* Anchor tag styling inside links */
 .links a {
   color: var(--font-color);
   text-decoration: none;
   font-size: 1.2rem;
 }
 
+/* Responsive styling for screen widths 425px and above */
 @media screen and (min-width: 425px) {
   #container h1,
   #cardH1,
@@ -159,6 +176,7 @@ main {
   }
 }
 
+/* Responsive styling for screen widths 768px and above */
 @media screen and (min-width: 768px) {
   #container h1,
   #cardH1,
@@ -185,11 +203,14 @@ main {
   }
 }
 
+/* Responsive styling for screen widths 1024px and above */
 @media screen and (min-width: 1024px) {
   #container {
     width: 60%;
   }
 }
+
+/* Responsive styling for screen widths 1440px and above */
 @media screen and (min-width: 1440px) {
   #container {
     width: 50%;
