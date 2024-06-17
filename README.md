@@ -2,7 +2,7 @@
 
 # BEYOND THE MOOD
 
-This Positive Affirmation and Colour Wheel app is designed to uplift your mood and bring positivity into your day. By seamlessly integrating the API Ninjas, it fetches and displays inspiring affirmations to motivate and encourage you. The app also features an interactive colour wheel, that resonate with your current mood. The chosen colour updates the card, creating a personalized and visually appealing experience. Additionally, with a built-in screenshot functionality powered by the `html2canvas` library, you can capture and save these moments of positivity, making it easy to revisit or share them with others. Whether you're looking for daily motivation or a splash of colour to brighten your day, this app combines the power of positive words and colour therapy into a simple, user-friendly tool.
+This Positive Affirmation and Colour Wheel app is designed to uplift your mood and bring positivity into your day. By seamlessly integrating the API Ninjas, it fetches and displays inspiring affirmations to motivate and encourage you. The app also features an interactive colour wheel, that resonates with your current mood. The chosen colour updates the card, creating a personalised and visually appealing experience. Additionally, with a built-in screenshot functionality powered by the `html2canvas` library, you can capture and save these moments of positivity, making it easy to revisit or share them with others. Whether you're looking for daily motivation or a splash of colour to brighten your day, this app combines the power of positive words and colour therapy into a simple, user-friendly tool.
 
 Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-affirmation-colour-wheel/)
 
@@ -66,15 +66,15 @@ Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-a
 
 ### A SHORT BRIEF
 
-Sometimes we dream to have a companion who personally uplifts our moods? Well, that idea is what my app/website is all about – a fun filled and inspiring corner of the interweb where sadness is shaken off, and happiness sought. By incorporating loads of bright colours, plus a dose of positive energy, I intend to help the user smile away there clouding mood.
+Sometimes we dream to have a companion who personally uplifts our mood. Well, that idea is what my app/website is all about – a fun filled and inspiring corner of the interweb where sadness is shaken off and happiness sought. By incorporating loads of bright colours, plus a dose of positive energy, I intend to help the user smile away their clouding mood.
 
 #### [USER VIEW](#user-view)
 
-| User Story                                                                                                                                                                                             | Acceptance Criteria                                                                                                                   | Scenario |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| As a person, I want to receive uplifting and galvanising colourings to help me shift my mood and attitude, so I can feel more fine and empowered during the day.                                       | The user can select a mood from the six options available and receive a colour and affirmation that resonates with their chosen mood. | Passed   |
-| As a consumer struggling with anxiety or depression, I need to get admission to a secure and supportive website wherein I can discover consolation and reassurance, so I can sense much less isolated. | The user can access the site and receive positive affirmations that help them feel supported and less alone.                          | Passed   |
-| As a user seeking out an every day series of amusing and uplifting content material, along with wonderful colours so I can begin my day on a high word and experience extra energised and influenced.  | The user can visit the site daily to receive a new affirmation and colour that uplifts their mood and energizes them for the day.     | Passed   |
+| User Story                                                                                                                                                                                             | Acceptance Criteria                                                                                                                   | Scenario         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| As a person, I want to receive uplifting and galvanising colourings to help me shift my mood and attitude, so I can feel fine and empowered during the day.                                            | The user can select a mood from the six options available and receive a colour and affirmation that resonates with their chosen mood. | Passed           |
+| As a consumer struggling with anxiety or depression, I need to get admission to a secure and supportive website wherein I can discover consolation and reassurance, so I can sense much less isolated. | The user can access the site and receive positive affirmations that help them feel supported and less alone.                          | Working Progress |
+| As a user I am seeking out an every day series of amusing and uplifting content material, along with wonderful colours so I can begin my day on a high note.                                           | The user can visit the site daily to receive a new affirmation and colour that uplifts their mood and energizes them for the day.     | Passed           |
 
 ## [Visual Design](#visual-design)
 
@@ -94,7 +94,7 @@ This is a simple flow chart that outlines the orientation of the site and what w
 
 #### [FONT](#font)
 
-I decided on the font Nunito for its mild, rounded corners, which I believe will create a experience of warmth and approachability upon arrival. By choosing a font with a softer side, I purpose to bring a sense of comfort and ease, making users feel extra comfortable as they navigate the website.
+I decided on the font Nunito for its mild, rounded corners, which I believe will create a experience of warmth and approachability upon arrival. By choosing a font with a softer side, I propose to bring a sense of comfort and ease, making users feel extra comfortable as they navigate the website.
 
 [Google Fonts - Nunito](https://fonts.google.com/specimen/Nunito?preview.text=Beyong&query=Nunito)
 
@@ -118,7 +118,7 @@ I utilized the colouration palette generator [coolors](https://coolors.co) to cr
 
 #### [LOGO](#logo)
 
-The logo was created with the help of [deep AI](https://deepai.org/machine-learning-model/text2img) image generator. I wanted the user to be greeted with a grounding picture as their first impression of of the site. The colour tones and tree give the calming grounding feeling I was looking for. My goal is to make the user have trust in the site, and I am confident that the logo will set that tone.
+The logo was created with the help of [deep AI](https://deepai.org/machine-learning-model/text2img) image generator. I wanted the user to be greeted with a grounding picture as their first impression of the site. The colour tones and tree give the calming grounding feeling I was looking for. My goal is to make the user have trust in the site and I am confident that the logo will set that tone.
 
 <img src="assets/images/btm-logo.webp" width='200px'>
 
@@ -186,7 +186,7 @@ This section is accessed through the Onwards Button where the mood container is 
 
 within an <code>addEventListener('click', function () {});</code>.
 
-This section also allow the user to take a screenshot of the affirmation and colour, so they can keep it with them.
+This section also allows the user to take a screenshot of the affirmation and colour, so they can keep it with them.
 
 <table "width=100%; table-layout: fixed;">
   <tr>
@@ -197,12 +197,12 @@ This section also allow the user to take a screenshot of the affirmation and col
   <tr>
     <td><img src="assets/images/readme-images/affirmaion-section.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Affirmation greeting</td>
-    <td>The use is encouraged to click the button we use the <code>fetchAffirmation()</code> function to generate the card.</td>
+    <td>The user is encouraged to click the button we use the <code>fetchAffirmation()</code> function to generate the card.</td>
   </tr>
   <tr>
     <td><img src="assets/images/readme-images/screenshot-section.png" style="width: 100%; max-width: 250px;"/></td>
     <td>Final card preview</td>
-    <td>The user then receives their card with the quote, colour and positive word. They click the screen hot button which save there card to keep with them. This is achieved with the built in function <code> html2canvas</code>.</td>
+    <td>The user then receives their card with the quote, colour and positive word. They click the screenshot button which saves their card to keep with them. This is achieved with the built in function <code> html2canvas</code>.</td>
   </tr>
   <tr>
     <td><img src="assets/images/readme-images/thank-you-message.png" style="width: 100%; max-width: 250px;"/></td>
@@ -213,7 +213,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   <tr>
     <td><img src="assets/images/readme-images/mood-card.jpg" style="width: 100%; max-width: 250px;"/></td>
     <td>Mood card screenshot</td>
-    <td>This is an example of the screenshot card that is saved to the users download folder in either there mobile device or computer.</td>
+    <td>This is an example of the screenshot card that is saved to the users download folder in either their mobile device or computer.</td>
   </tr>
 </table>
 
@@ -221,7 +221,7 @@ This section also allow the user to take a screenshot of the affirmation and col
 
 The json folder contains two files. One that is used to generate the positive words and colours for the site depending on the mood the user selects. Two is the backup file that is used if the API fails to fetch the affirmations.
 
-  - <code>coloursAndFeelings.json</code> - This file contains the colours and positive words that are used to create the colour wheel and then return the random colour and corespondent word relating to the mood selected. They are then returned in a message below the wheel. After the user moves on to the affirmation section the colour and word are displayed on the card with the affirmation/quote.
+  - <code>coloursAndFeelings.json</code> - This file contains the colours and positive words that are used to create the colour wheel and then return the random colour and corresponding word relating to the mood selected. They are then returned in a message below the wheel. After the user moves on to the affirmation section the colour and word are displayed on the card with the affirmation/quote.
   
   - <code>backupQuotes.json</code> - This file contains the backup affirmations/quotes that are used if the API fails to fetch the affirmations. This is a random selection of quotes that are displayed on the card with the colour and positive word.
 
@@ -237,7 +237,7 @@ On the 404 page the user is greeted with a message that the page they are lookin
 
 - <b>Idea 1:</b> I would like to add a feature that allows the user to share their card on social media. This would be a great way to spread the positivity and share the app with others.
   <br><br>
-- <b>Idea 2:</b> One that allows the user to save their favourite cards to a gallery. This would be a great way for the user to keep track of their favourite cards.
+- <b>Idea 2:</b> A feature that allows the user to save their favourite cards to a gallery. This would be a great way for the user to keep track of their favourite cards.
   <br><br>
 - <b>Idea 3:</b> Allow the user to keep track of their mood and affirmations. This would be a great way for the user to see how their mood has changed over time.
 
@@ -263,7 +263,6 @@ On the 404 page the user is greeted with a message that the page they are lookin
   [Coolors](https://coolors.co/) - The colour palette generator I used to create the colour scheme.<br>
   [API Ninjas](https://api-ninjas.com/api/quotes) - The API I used to fetch the affirmations/ quotes.<br>
   [html2canvas](https://html2canvas.hertzen.com/) - The library I used to add the screenshot functionality to the site.<br>
-  [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.<br>
   [bytes.dev](https://bytes.dev/?s=amiresponsive) - The site I used to check the responsiveness of the site.<br>
   [Google Fonts](https://fonts.google.com/) - The font library I used to add the font to the site.<br>
   [ChatGPT](https://chatgpt.com/) - I used chatGPT to generate the backup json file with the positive affirmations.
@@ -277,7 +276,7 @@ On the 404 page the user is greeted with a message that the page they are lookin
 ### JavaScript Validation 
 - [JSHint](https://jshint.com/) -- No errors. All warnings shown are in regards to available in ES6.
 
-<B>On applying the JSHint to the JavaScript file, I realised that two of my functions where to big and I needed to break them down:</B>
+<B>On applying the JSHint to the JavaScript file, I realised that two of my functions where too big and I needed to break them down:</B>
 
 #### REFACTORING OF TWO FUNCTIONS
 
@@ -310,11 +309,11 @@ function handleMoodClick(button, colourWheel) {
 ```
 - CHANGES MADE TO THE FUNCTION
 1. **`handleMoodClick`**: Fetches the JSON data and calls `processMoodClick` with the necessary parameters.
-2. **`processMoodClick`**: Processes the mood click event by setting the mood, clearing any existing message, applying colors, and starting the color wheel spin.
+2. **`processMoodClick`**: Processes the mood click event by setting the mood, clearing any existing message, applying colours and starting the colour wheel spin.
 3. **`clearMessage`**: Clears the message element's inner HTML.
-4. **`spinColourWheel`**: Adds the spin class to the color wheel, and after 3 seconds, it stops the spin, selects a random color, saves the selected color, and displays the mood color message.
-5. **`getRandomColour`**: Selects a random color from the mood colors.
-6. **`saveSelectedColour`**: Saves the selected color's name, hex value, and associated feeling to local storage.
+4. **`spinColourWheel`**: Adds the spin class to the colour wheel, and after 3 seconds, it stops the spin, selects a random colour, saves the selected colour, and displays the mood colour message.
+5. **`getRandomColour`**: Selects a random colour from the mood colors.
+6. **`saveSelectedColour`**: Saves the selected colour's name, hex value, and associated feeling to local storage.
 
 <hr>
 <br>
@@ -408,8 +407,8 @@ function handleMoodClick(button, colourWheel) {
   ````
 - CHANGES MADE TO THE FUNCTION
 1. **Separation of Concerns**: The main function `fetchAffirmation` now delegates specific tasks to smaller functions, each responsible for one aspect of the operation.
-   - `setCardColors`: Sets the background color of the card and line area.
-   - `displaySelectedMoodAndColor`: Displays the selected mood and color on the card.
+   - `setCardColours`: Sets the background colour of the card and line area.
+   - `displaySelectedMoodAndColour`: Displays the selected mood and colour on the card.
    - `handleApiResponse`: Handles the API response and updates the DOM.
    - `fetchBackupAffirmation`: Fetches affirmation from a backup JSON file if the API call fails.
    - `updateButtonAndHeader`: Updates the button and header text.
@@ -420,7 +419,7 @@ function handleMoodClick(button, colourWheel) {
 
 #### OVERALL BENEFITS OF REFACTORING
 
-  By breaking down the original TWO BIG FUNCTIONS into smaller helper functions, I achieve a more readability, maintainability, and reusable code. The refactored code is easier to understand and debug, and it follows the single responsibility principle, with each function handling a specific task.
+  By breaking down the original TWO BIG FUNCTIONS into smaller helper functions, I achieve more readability, maintainability, and reusable code. The refactored code is easier to understand and debug and it follows the single responsibility principle, with each function handling a specific task.
 
   <hr>
 
@@ -462,7 +461,7 @@ On the lighthouse testing I received a score of close to 100% on all the pages. 
 
 The only two bugs that I was unable to fix are an issue with the final screenshot and the <code>window.scrollTo</code> function.
 
-- HERE IS AN EXAMPLE OF THE BUG ONE:
+- HERE IS AN EXAMPLE OF BUG ONE:
 
  | Before Screenshot                                     | After Screenshot                                   |
  | ----------------------------------------------------- | -------------------------------------------------- |

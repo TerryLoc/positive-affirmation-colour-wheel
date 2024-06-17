@@ -227,7 +227,7 @@ const options = {
 // Here we have all the functions that are needed to create the mood card after breaking it down into smaller functions
 
 // Function to set the card colors
-function setCardColors(colour) {
+function setCardColours(colour) {
   const card = document.getElementById('innerCard');
   const lineArea = document.getElementById('lineArea');
   card.style.backgroundColor = colour;
@@ -235,7 +235,7 @@ function setCardColors(colour) {
 }
 
 // Function to display the selected mood and color on the card
-function displaySelectedMoodAndColor(colour, feeling) {
+function displaySelectedMoodAndColour(colour, feeling) {
   const selectedColour = document.getElementById('selectedColour');
   const selectedFeeling = document.getElementById('selectedFeeling');
   selectedColour.innerHTML = `Colour Code: ${colour}`;
@@ -294,8 +294,8 @@ async function fetchAffirmation() {
   const feeling = localStorage.getItem('feeling');
 
   // Set the card colors and display the selected mood and color
-  setCardColors(colour);
-  displaySelectedMoodAndColor(colour, feeling);
+  setCardColours(colour);
+  displaySelectedMoodAndColour(colour, feeling);
 
   // Fetch the affirmation based on the mood
   let result;
