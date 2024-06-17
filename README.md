@@ -36,6 +36,7 @@ Navigate to the website: [Beyond The Mood](https://terryloc.github.io/positive-a
     <li><a href="#home-page">Home Page</a></li>
     <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
     <li><a href="#affirmation--screenshot">Affirmation & Screenshot</a></li>
+    <li><a href="#json-files">Json Files</a></li>
     <li><a href="#page-404">Page 404</a></li>
   </ul>
 </details>
@@ -215,6 +216,14 @@ This section also allow the user to take a screenshot of the affirmation and col
     <td>This is an example of the screenshot card that is saved to the users download folder in either there mobile device or computer.</td>
   </tr>
 </table>
+
+#### [Json Files](#json-files)
+
+The json folder contains two files. One that is used to generate the positive words and colours for the site depending on the mood the user selects. Two is the backup file that is used if the API fails to fetch the affirmations.
+
+  - <code>coloursAndFeelings.json</code> - This file contains the colours and positive words that are used to create the colour wheel and then return the random colour and corespondent word relating to the mood selected. They are then returned in a message below the wheel. After the user moves on to the affirmation section the colour and word are displayed on the card with the affirmation/quote.
+  
+  - <code>backupQuotes.json</code> - This file contains the backup affirmations/quotes that are used if the API fails to fetch the affirmations. This is a random selection of quotes that are displayed on the card with the colour and positive word.
 
 #### [PAGE 404](#page-404)
 
