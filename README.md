@@ -43,7 +43,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 <details>
   <summary>5. <a href="#testing">Testing</a></summary>
   <ul>
-    <li><a href="#unit-tests">Unit Tests</a></li>
+    <li><a href="#manual-testing">Manual Testing</a></li>
     <li><a href="#integration-tests">Integration Tests</a></li>
     <!-- Add more testing items as needed -->
   </ul>
@@ -230,6 +230,14 @@ This section also allow the user to take a screenshot of the affirmation and col
     <td>This is an example of the screenshot card that is saved to the users download folder in either there mobile device or computer.</td>
   </tr>
 </table>
+
+#### [404 PAGE](#404page)
+
+On the 404 page the user is greeted with a message that the page they are looking for is not available. The user is encouraged to return to the home page.
+
+<img src="assets/images/readme-images/404-page.png" alt="404 page" width="500px"/>
+
+<br>
 
 ### Other Features that I would like to Implement:
 
@@ -421,12 +429,16 @@ function handleMoodClick(button, colourWheel) {
   By breaking down the original TWO BIG FUNCTIONS into smaller helper functions, I achieve a more readability, maintainability, and reusable code. The refactored code is easier to understand and debug, and it follows the single responsibility principle, with each function handling a specific task.
 
 
-  
-- [WebAIM](https://wave.webaim.org/) - [Results](https://wave.webaim.org/report#/https://jamesmudidi.github.io/positive-affirmation-colour-wheel/) - No errors or warnings to show.
 
-### Manual Testing
+## [Manual Testing](#manual-testing)
 
   After testing the site on multiple devices and browsers, I found that the site was responsive and worked well on all devices. The site was tested on the following devices and browsers:
+
+  - **Desktop**: Chrome, Brave, Safari
+  - **Tablet**: iPad
+  - **Mobile**: iPhone 12, Samsung Galaxy s10, Realme GT 2
+
+
 
 ### Unfixed Bugs
 
