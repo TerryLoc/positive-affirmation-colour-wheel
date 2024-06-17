@@ -47,57 +47,95 @@ function toggleMoodAndAffirmation() {
 }
 
 /**
- * Handles the mood button click event.
+ * Handles the mood button click event by fetching the color data and processing the mood click.
  * @param {HTMLElement} button - The button element that was clicked.
  * @param {HTMLElement} colourWheel - The element representing the color wheel.
  */
 function handleMoodClick(button, colourWheel) {
   // Fetch the JSON file containing colors and feelings data.
   fetch('assets/json/coloursAndFeelings.json')
-    .then((response) => response.json()) // Parse the JSON file into a JavaScript object.
-    .then((coloursAndFeelings) => {
-      // Get the mood from the clicked button's data attribute.
-      const mood = button.getAttribute('data-mood');
-
-      // Store the selected mood in local storage.
-      localStorage.setItem('mood', mood);
-
-      // Clear any existing content in the message element.
-      const message = document.getElementById('colourChoice');
-      message.innerHTML = '';
-
-      // Apply the colors associated with the selected mood.
-      applyColours(Object.values(coloursAndFeelings[mood]));
-
-      // Add a spinning animation to the color wheel.
-      colourWheel.classList.add('spin');
-
-      // Set a timeout to stop the spinning and select a random color.
-      setTimeout(() => {
-        // Get the colors and their names associated with the selected mood.
-        const colorsKeys = Object.entries(coloursAndFeelings[mood]);
-
-        // Select a random color from the list of mood colors.
-        const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
-        const randomColourName = randomEntry[0];
-        const randomColour = randomEntry[1];
-
-        // Remove the spinning animation from the color wheel.
-        colourWheel.classList.remove('spin');
-
-        // Set the background color of the color wheel to the randomly selected color.
-        colourWheel.style.background = randomColour.hex;
-
-        // Store the selected color name, color hex value, and associated feeling in local storage.
-        localStorage.setItem('colourName', randomColourName);
-        localStorage.setItem('colour', randomColour.hex);
-        localStorage.setItem('feeling', randomColour.feeling);
-
-        // Call a function to display a message about the selected mood and color.
-        moodColourMsg();
-      }, 3000); // Set the delay for 3 seconds to match the spinning animation duration.
-    });
+    .then(response => response.json()) // Parse the JSON file into a JavaScript object.
+    .then(coloursAndFeelings => processMoodClick(button, colourWheel, coloursAndFeelings)); // Process the mood click with the data.
 }
+
+/**
+ * Processes the mood click event by applying the corresponding colors and starting the color wheel spin.
+ * @param {HTMLElement} button - The button element that was clicked.
+ * @param {HTMLElement} colourWheel - The element representing the color wheel.
+ * @param {Object} coloursAndFeelings - The data containing colors and feelings for each mood.
+ */
+function processMoodClick(button, colourWheel, coloursAndFeelings) {
+  // Get the mood from the clicked button's data attribute.
+  const mood = button.getAttribute('data-mood');
+  
+  // Store the selected mood in local storage.
+  localStorage.setItem('mood', mood);
+  
+  // Clear any existing content in the message element.
+  clearMessage();
+  
+  // Apply the colors associated with the selected mood.
+  applyColours(Object.values(coloursAndFeelings[mood]));
+  
+  // Add a spinning animation to the color wheel.
+  spinColourWheel(colourWheel, coloursAndFeelings[mood]);
+}
+
+/**
+ * Clears the message element's inner HTML.
+ */
+function clearMessage() {
+  const message = document.getElementById('colourChoice');
+  message.innerHTML = '';
+}
+
+/**
+ * Adds a spinning animation to the color wheel and selects a random color after the spin.
+ * @param {HTMLElement} colourWheel - The element representing the color wheel.
+ * @param {Object} moodColours - The colors associated with the selected mood.
+ */
+function spinColourWheel(colourWheel, moodColours) {
+  colourWheel.classList.add('spin');
+  setTimeout(() => {
+    // Get a random color from the mood colors.
+    const { randomColourName, randomColour } = getRandomColour(moodColours);
+    
+    // Remove the spinning animation from the color wheel.
+    colourWheel.classList.remove('spin');
+    
+    // Set the background color of the color wheel to the randomly selected color.
+    colourWheel.style.background = randomColour.hex;
+    
+    // Store the selected color name, color hex value, and associated feeling in local storage.
+    saveSelectedColour(randomColourName, randomColour);
+    
+    // Call a function to display a message about the selected mood and color.
+    moodColourMsg();
+  }, 3000); // Set the delay for 3 seconds to match the spinning animation duration.
+}
+
+/**
+ * Selects a random color from the mood colors.
+ * @param {Object} moodColours - The colors associated with the selected mood.
+ * @returns {Object} An object containing the random color name and the random color data.
+ */
+function getRandomColour(moodColours) {
+  const colorsKeys = Object.entries(moodColours);
+  const randomEntry = colorsKeys[Math.floor(Math.random() * colorsKeys.length)];
+  return { randomColourName: randomEntry[0], randomColour: randomEntry[1] };
+}
+
+/**
+ * Saves the selected color's name, hex value, and associated feeling to local storage.
+ * @param {string} randomColourName - The name of the randomly selected color.
+ * @param {Object} randomColour - The data of the randomly selected color.
+ */
+function saveSelectedColour(randomColourName, randomColour) {
+  localStorage.setItem('colourName', randomColourName);
+  localStorage.setItem('colour', randomColour.hex);
+  localStorage.setItem('feeling', randomColour.feeling);
+}
+
 
 // Check if the colourWheel element exists and if there are any mood buttons.
 if (colourWheel && moodButtons.length > 0) {
@@ -185,90 +223,98 @@ const options = {
     'Content-Type': 'application/json',
   },
 };
-/**
- Fetches an affirmation from the API and displays it on the page.
- */
-async function fetchAffirmation() {
-  const quote = document.getElementById('quote');
-  const author = document.getElementById('author');
-  // Get the colour and mood from local storage
-  const colour = localStorage.getItem('colour');
-  const feeling = localStorage.getItem('feeling');
-  // Get the selected colour and mood elements from the DOM
-  const selectedColour = document.getElementById('selectedColour');
-  const selectedFeeling = document.getElementById('selectedFeeling');
-  // Get the card and line area elements from the DOM
+
+// Here we have all the functions that are needed to create the mood card after breaking it down into smaller functions
+
+// Function to set the card colors
+function setCardColors(colour) {
   const card = document.getElementById('innerCard');
   const lineArea = document.getElementById('lineArea');
-
-  // Set the colour of the card to the random colour
   card.style.backgroundColor = colour;
   lineArea.style.backgroundColor = colour;
+}
 
-  // Display the selected mood and colour on the card
+// Function to display the selected mood and color on the card
+function displaySelectedMoodAndColor(colour, feeling) {
+  const selectedColour = document.getElementById('selectedColour');
+  const selectedFeeling = document.getElementById('selectedFeeling');
   selectedColour.innerHTML = `Colour Code: ${colour}`;
   selectedFeeling.innerHTML = `Positive Word: ${feeling}`;
+}
 
-  let result;
-  // Fetch the affirmation from the API
-  try {
-    // Get the URL for the selected mood
-    const url = getQuotesByMood(localStorage.getItem('mood'));
-    const response = await fetch(url, options);
+// Function to handle successful API response
+function handleApiResponse(result) {
+  const quote = document.getElementById('quote');
+  const author = document.getElementById('author');
+  quote.innerHTML = result[0].quote;
+  author.innerHTML = result[0].author;
+}
 
-    if (!response.ok) {
-      debugger;
-      // If the response is not ok, throw an error with the status
-      throw new Error(`HTTP error! status: ${response.status}`);
-    } else {
-      // Parse the response into a JavaScript object and store it in the result variable
-      result = await response.json();
-      // Display the affirmation and author to DOM
-      quote.innerHTML = result[0].quote;
-      author.innerHTML = result[0].author;
-    }
-  } catch (error) {
-    // Backup affirmations in case the API fails
-    fetch('assets/json/backupQuotes.json')
-      .then((response) => response.json())
-      .then((backupQuotes) => {
-        console.log(backupQuotes);
-        // Display the affirmation and author to the console
-        console.error(`Failed to fetch affirmation: ${error.message}`);
-        // Backup affirmations in case the API fails
-        const result =
-          backupQuotes[Math.floor(Math.random() * backupQuotes.length)];
-        // Display the affirmation and author to DOM
-        quote.innerHTML = result.quote;
-        author.innerHTML = result.author;
-      });
-  }
+// Function to fetch affirmation from backup quotes
+async function fetchBackupAffirmation() {
+  const quote = document.getElementById('quote');
+  const author = document.getElementById('author');
+  const response = await fetch('assets/json/backupQuotes.json');
+  const backupQuotes = await response.json();
+  const result = backupQuotes[Math.floor(Math.random() * backupQuotes.length)];
+  quote.innerHTML = result.quote;
+  author.innerHTML = result.author;
+}
 
-  // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
+// Function to change button text and header text
+function updateButtonAndHeader() {
   const affirmationBtn = document.getElementById('affirmationBtn');
   const cardH1 = document.getElementById('cardH1');
   affirmationBtn.innerHTML = 'Screenshot';
   cardH1.innerHTML = 'Screen Shot Your Card';
+}
 
-  // Add event listener to the button
+// Function to add event listener for screenshot functionality
+function addScreenshotListener() {
+  const affirmationBtn = document.getElementById('affirmationBtn');
   affirmationBtn.addEventListener('click', function () {
     const card = document.getElementById('card');
     html2canvas(card).then((canvas) => {
-      // Convert the canvas to a data URL
       const imgData = canvas.toDataURL('image/jpg');
-
-      // Create a link element
       const link = document.createElement('a');
       link.href = imgData;
       link.download = 'mood-card.jpg';
-
-      // Download the image
       link.click();
     });
-    // Hide the card and display the final container
     const container2 = document.getElementById('container2');
     const container3 = document.getElementById('container3');
     container2.style.display = 'none';
     container3.style.display = 'flex';
   });
 }
+
+// Main function to fetch affirmation
+async function fetchAffirmation() {
+  const colour = localStorage.getItem('colour');
+  const feeling = localStorage.getItem('feeling');
+
+  // Set the card colors and display the selected mood and color
+  setCardColors(colour);
+  displaySelectedMoodAndColor(colour, feeling);
+
+  // Fetch the affirmation based on the mood
+  let result;
+  try {
+    const url = getQuotesByMood(localStorage.getItem('mood'));
+    const response = await fetch(url, options);
+    // Check if the response is ok
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    } 
+    // Parse the response into JSON
+    result = await response.json();
+    handleApiResponse(result);
+  } catch (error) {
+    console.error(`Failed to fetch affirmation: ${error.message}`);
+    await fetchBackupAffirmation();
+  }
+  // Update the button text and header text and add event listener for screenshot functionality
+  updateButtonAndHeader();
+  addScreenshotListener();
+}
+
