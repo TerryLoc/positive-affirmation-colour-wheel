@@ -269,10 +269,164 @@ This section also allow the user to take a screenshot of the affirmation and col
 
 ### Validator Testing
 
-- [W3C HTML Validator](https://validator.w3.org/) -- No errors or warnings to shown on index or mood HTML.
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) -- There where no errors on either style or mood CSS.<br><img src="assets/images/readme-images/css-result.png"/>
-- [JSHint](https://jshint.com/) - [Results](https://jshint.com/) - No errors or warnings to show.
+##### HTML & CSS Validation
+- [W3C HTML Validator](https://validator.w3.org/) -- No errors or warnings shown on index or mood HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) -- There where no errors on either style or mood CSS.<br><br><img src="assets/images/readme-images/css-result.png"/><br><br>
+### JavaScript Validation 
+- [JSHint](https://jshint.com/) -- No errors. All warnings shown are in regards to available in ES6.
+
+<B>On applying the JSHint to the JavaScript file, I realised that two of my where to big and needed to be broken down:</B>
+
+#### REFACTORING OF TWO FUNCTIONS
+
+- My Original `handleMoodClick` Function:
+```javascript
+function handleMoodClick(button, colourWheel) {
+  fetch('assets/json/coloursAndFeelings.json')
+    .then((response) => response.json())
+    .then((coloursAndFeelings) => {
+      const mood = button.getAttribute('data-mood');
+      localStorage.setItem('mood', mood);
+      const message = document.getElementById('colourChoice');
+      message.innerHTML = '';
+      applyColours(Object.values(coloursAndFeelings[mood]));
+      colourWheel.classList.add('spin');
+      setTimeout(() => {
+        const colorsKeys = Object.entries(coloursAndFeelings[mood]);
+        const randomEntry = colorsKeys[Math.floor(Math.random() * 6)];
+        const randomColourName = randomEntry[0];
+        const randomColour = randomEntry[1];
+        colourWheel.classList.remove('spin');
+        colourWheel.style.background = randomColour.hex;
+        localStorage.setItem('colourName', randomColourName);
+        localStorage.setItem('colour', randomColour.hex);
+        localStorage.setItem('feeling', randomColour.feeling);
+        moodColourMsg();
+      }, 3000);
+    });
+}
+```
+- CHANGES MADE TO THE FUNCTION
+1. **`handleMoodClick`**: Fetches the JSON data and calls `processMoodClick` with the necessary parameters.
+2. **`processMoodClick`**: Processes the mood click event by setting the mood, clearing any existing message, applying colors, and starting the color wheel spin.
+3. **`clearMessage`**: Clears the message element's inner HTML.
+4. **`spinColourWheel`**: Adds the spin class to the color wheel, and after 3 seconds, it stops the spin, selects a random color, saves the selected color, and displays the mood color message.
+5. **`getRandomColour`**: Selects a random color from the mood colors.
+6. **`saveSelectedColour`**: Saves the selected color's name, hex value, and associated feeling to local storage.
+
+<hr>
+<br>
+
+- My Original `fetchAffirmation` Function:
+  ````javascript
+  async function fetchAffirmation() {
+  const quote = document.getElementById('quote');
+  const author = document.getElementById('author');
+  // Get the colour and mood from local storage
+  const colour = localStorage.getItem('colour');
+  const feeling = localStorage.getItem('feeling');
+  // Get the selected colour and mood elements from the DOM
+  const selectedColour = document.getElementById('selectedColour');
+  const selectedFeeling = document.getElementById('selectedFeeling');
+  // Get the card and line area elements from the DOM
+  const card = document.getElementById('innerCard');
+  const lineArea = document.getElementById('lineArea');
+
+  // Set the colour of the card to the random colour
+  card.style.backgroundColor = colour;
+  lineArea.style.backgroundColor = colour;
+
+  // Display the selected mood and colour on the card
+  selectedColour.innerHTML = `Colour Code: ${colour}`;
+  selectedFeeling.innerHTML = `Positive Word: ${feeling}`;
+
+  let result;
+  // Fetch the affirmation from the API
+  try {
+    // Get the URL for the selected mood
+    const url = getQuotesByMood(localStorage.getItem('mood'));
+    const response = await fetch(url, options);
+
+    if (!response.ok) {
+      debugger;
+      // If the response is not ok, throw an error with the status
+      throw new Error(`HTTP error! status: ${response.status}`);
+    } else {
+      // Parse the response into a JavaScript object and store it in the result variable
+      result = await response.json();
+      // Display the affirmation and author to DOM
+      quote.innerHTML = result[0].quote;
+      author.innerHTML = result[0].author;
+    }
+  } catch (error) {
+    // Backup affirmations in case the API fails
+    fetch('assets/json/backupQuotes.json')
+      .then((response) => response.json())
+      .then((backupQuotes) => {
+        console.log(backupQuotes);
+        // Display the affirmation and author to the console
+        console.error(`Failed to fetch affirmation: ${error.message}`);
+        // Backup affirmations in case the API fails
+        const result =
+          backupQuotes[Math.floor(Math.random() * backupQuotes.length)];
+        // Display the affirmation and author to DOM
+        quote.innerHTML = result.quote;
+        author.innerHTML = result.author;
+      });
+  }
+
+  // Change button text to 'Screenshot' & h1 text to 'Screen Shot Your Card'
+  const affirmationBtn = document.getElementById('affirmationBtn');
+  const cardH1 = document.getElementById('cardH1');
+  affirmationBtn.innerHTML = 'Screenshot';
+  cardH1.innerHTML = 'Screen Shot Your Card';
+
+  // Add event listener to the button
+  affirmationBtn.addEventListener('click', function () {
+    const card = document.getElementById('card');
+    html2canvas(card).then((canvas) => {
+      // Convert the canvas to a data URL
+      const imgData = canvas.toDataURL('image/jpg');
+
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = imgData;
+      link.download = 'mood-card.jpg';
+
+      // Download the image
+      link.click();
+    });
+    // Hide the card and display the final container
+    const container2 = document.getElementById('container2');
+    const container3 = document.getElementById('container3');
+    container2.style.display = 'none';
+    container3.style.display = 'flex';
+  });
+  }
+  ````
+- CHANGES MADE TO THE FUNCTION
+1. **Separation of Concerns**: The main function `fetchAffirmation` now delegates specific tasks to smaller functions, each responsible for one aspect of the operation.
+   - `setCardColors`: Sets the background color of the card and line area.
+   - `displaySelectedMoodAndColor`: Displays the selected mood and color on the card.
+   - `handleApiResponse`: Handles the API response and updates the DOM.
+   - `fetchBackupAffirmation`: Fetches affirmation from a backup JSON file if the API call fails.
+   - `updateButtonAndHeader`: Updates the button and header text.
+   - `addScreenshotListener`: Adds an event listener to the screenshot button.
+
+2. **Error Handling**: The `try...catch` block in `fetchAffirmation` handles errors gracefully, using `fetchBackupAffirmation` if the API request fails.
+
+
+#### OVERALL BENEFITS OF REFACTORING
+
+  By breaking down the original TWO BIG FUNCTIONS into smaller helper functions, I achieve a more readability, maintainability, and reusable code. The refactored code is easier to understand and debug, and it follows the single responsibility principle, with each function handling a specific task.
+
+
+  
 - [WebAIM](https://wave.webaim.org/) - [Results](https://wave.webaim.org/report#/https://jamesmudidi.github.io/positive-affirmation-colour-wheel/) - No errors or warnings to show.
+
+### Manual Testing
+
+  After testing the site on multiple devices and browsers, I found that the site was responsive and worked well on all devices. The site was tested on the following devices and browsers:
 
 ### Unfixed Bugs
 
