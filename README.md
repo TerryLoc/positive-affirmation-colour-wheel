@@ -33,6 +33,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
     <li><a href="#home-page">Home Page</a></li>
     <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
     <li><a href="#affirmation--screenshot">Affirmation & Screenshot</a></li>
+    <li><a href="#page-404">Page 404</a></li>
   </ul>
 </details>
 
@@ -45,7 +46,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#manual-testing">Manual Testing</a></li>
     <li><a href="#integration-tests">Integration Tests</a></li>
-    <!-- Add more testing items as needed -->
   </ul>
 </details>
 
@@ -54,7 +54,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#deployment-steps">Deployment Steps</a></li>
     <li><a href="#environment-setup">Environment Setup</a></li>
-    <!-- Add more deployment items as needed -->
   </ul>
 </details>
 
@@ -63,7 +62,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#contributor-1">Contributor 1</a></li>
     <li><a href="#contributor-2">Contributor 2</a></li>
-    <!-- Add more credits as needed -->
   </ul>
 </details>
 
@@ -72,7 +70,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#author-name">Author Name</a></li>
     <li><a href="#author-bio">Author Bio</a></li>
-    <!-- Add more author items as needed -->
   </ul>
 </details>
 
@@ -231,7 +228,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   </tr>
 </table>
 
-#### [404 PAGE](#404page)
+#### [PAGE 404](#page-404)
 
 On the 404 page the user is greeted with a message that the page they are looking for is not available. The user is encouraged to return to the home page.
 
@@ -451,3 +448,6 @@ function handleMoodClick(button, colourWheel) {
 Good vibes all round! The affirmations come from API Ninjas, which provides a extensive type of nice and motivational messages to inspire clients. Affirmations are displayed in an smooth, uncluttered format that makes it clean for users to acquire uplifting content material. Quotes are randomly generated every time a person clicks the "Get Affirmation" button, ensuring a clean and unique experience with each visit. Designed to inspire users to embrace positivity.
 
 ### Other General Project Advice
+
+
+[def]: 404pag
