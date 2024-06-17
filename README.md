@@ -44,6 +44,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 <details>
   <summary>5. <a href="#testing">Testing</a></summary>
   <ul>
+    <li><a href="#lighthouse-testing">Lighthouse Testing</a></li>
     <li><a href="#manual-testing">Manual Testing</a></li>
     <li><a href="#integration-tests">Integration Tests</a></li>
   </ul>
@@ -425,7 +426,18 @@ function handleMoodClick(button, colourWheel) {
 
   By breaking down the original TWO BIG FUNCTIONS into smaller helper functions, I achieve a more readability, maintainability, and reusable code. The refactored code is easier to understand and debug, and it follows the single responsibility principle, with each function handling a specific task.
 
+  <hr>
 
+### [Lighthouse Testing](#lighthouse-testing)
+
+On the lighthouse testing I received a score of close to 100% on all the pages. This was surprising as I was expecting a lower score because of the movement between containers and the use of the API. I was very happy with the results and I am confident that the site is user friendly and accessible.
+
+| Page         | Size    | Screenshot                                                   | Notes           |
+| ------------ | ------- | ------------------------------------------------------------ | --------------- |
+| Home         | Mobile  | ![screenshot](assets/images/testing-images/home-mobile.png)  | No warnings     |
+| Home         | Desktop | ![screenshot](assets/images/testing-images/home-desktop.png) | 100% all around |
+| Mood section | Mobile  | ![screenshot](assets/images/testing-images/mood-mobile.png)  | No warnings     |
+| Mood section | Desktop | ![screenshot](assets/images/testing-images/mood-desktop.png) | No warnings     |
 
 ## [Manual Testing](#manual-testing)
 
