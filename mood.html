@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <title>BTM - App</title>
-
-    <link rel="stylesheet" href="assets/css/mood.css" />
+    <meta
+      name="description"
+      content="An Affirmation colour wheel which provides a wide range of positive and motivational colours & messages to inspire users." />
+    <meta
+      name="keywords"
+      content="Positivity, Affirmations, Mood, Uplifting, Empowerment, Colours, Brighten Day" />
+    <!-- Title of the webpage -->
+    <title>BEYOND THE MOOD</title>
+    <link rel="stylesheet" href="assets/css/mood.css">
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Favicon -->
@@ -31,6 +35,7 @@
   </head>
   <body>
     <header>
+       <!-- Header section with logo -->
       <a href="index.html">
         <img
           class="logo"
@@ -39,8 +44,11 @@
       </a>
     </header>
     <main>
+      <!-- Container for mood selection -->
       <div id="container">
+        <!-- Heading for mood selection -->
         <h1 id="moodH1">What mood is clouding your day?</h1>
+        <!-- Mood selection buttons -->
         <section id="mood">
           <button class="mood-btn" data-mood="Angry">Angry</button>
           <button class="mood-btn" data-mood="Anxious">Anxious</button>
@@ -49,21 +57,27 @@
           <button class="mood-btn" data-mood="Sad">Sad</button>
           <button class="mood-btn" data-mood="Stressed">Stressed</button>
         </section>
+        <!-- Colour wheel section -->
         <section class="colourWheels">
           <div id="colourWheel1" class="colourWheel"></div>
         </section>
+        <!-- Message section with onwards button -->
         <div id="messageSection">
           <p id="colourChoice"></p>
           <button id="onwardsBtn" class="onwards">Onwards</button>
         </div>
       </div>
+      <!-- Container for affirmation card -->
       <div id="container2">
+        <!-- Heading for affirmation card -->
         <h1 id="cardH1">Click the affirmation button!</h1>
+        <!-- Affirmation card section -->
         <div class="outerCard" id="card">
           <div id="innerCard"></div>
           <div class="textArea">
             <h2 id="cardTitle">mood card</h2>
             <div id="lineArea"></div>
+            <!-- Inner message of the card -->
             <div id="innerMessage">
               <p id="quote"></p>
               <p class="author"><i id="author"></i></p>
@@ -72,9 +86,12 @@
             </div>
           </div>
         </div>
+        <!-- Affirmation button -->
         <button id="affirmationBtn" class="onwards">Affirmation</button>
       </div>
+      <!-- Container for thank you message -->
       <div id="container3">
+        <!-- Thank you message -->
         <h1 id="thankYouH1">Thank you!</h1>
         <section id="thankYou">
           <p>
@@ -83,11 +100,14 @@
             &#128521; ⁄＞
           </p>
         </section>
+        <!-- Home button -->
         <button id="homeBtn" class="onwards">Home</button>
       </div>
     </main>
+    <!-- Footer section -->
     <footer id="footer">
       <p>&copy; 2024 Beyond the Mood. All Rights Reserved.</p>
+      <!-- Social media links -->
       <div class="links">
         <a title="x website link" href="https://x.com/" target="_blank"
           ><i class="fa-brands fa-x-twitter"></i
