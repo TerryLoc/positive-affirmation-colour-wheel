@@ -1,7 +1,9 @@
+/* Root variables for global theme colour */
 :root {
   --card-main: #3e3e3e;
 }
 
+/* Styling for the colour wheel element */
 #colourWheel1 {
   width: 200px;
   height: 200px;
@@ -11,15 +13,18 @@
   background-color: var(--transparent-bg);
 }
 
+/* Shared styling for colour wheel elements */
 .colourWheel {
   box-shadow: inset 0 0 5px 3px var(--font-color),
     0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
+/* Spin animation styling */
 .spin {
   animation: spin 3s linear;
 }
 
+/* Keyframes for spin animation */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -29,12 +34,14 @@
   }
 }
 
+/* Styling for mood buttons container */
 #mood {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
+/* Styling for mood buttons */
 .mood-btn {
   background-color: var(--bg-color);
   color: var(--font-color);
@@ -45,6 +52,7 @@
   cursor: pointer;
 }
 
+/* Styling for the message section */
 #messageSection {
   margin-top: 20px;
   display: flex;
@@ -53,11 +61,12 @@
   justify-content: center;
 }
 
-/* Affirmation card */
+/* Affirmation card header styling */
 #cardH1 {
   padding: 20px 10px;
 }
 
+/* Container for the inner content */
 #container2 {
   display: flex;
   align-items: center;
@@ -66,6 +75,7 @@
   display: none;
 }
 
+/* Outer card styling for affirmation card */
 .outerCard {
   display: flex;
   flex-direction: row;
@@ -81,6 +91,7 @@
   border-radius: 10px;
 }
 
+/* Inner card styling for affirmation card */
 #innerCard {
   position: relative;
   background-color: var(--transparent-bg);
@@ -88,6 +99,7 @@
   max-width: 300px;
   min-height: 200px;
   max-height: 600px;
+  /* Curve styling added to inner card */
   --br-x: 50%;
   --br-y: 50%;
   --br-i: 7px;
@@ -99,6 +111,7 @@
   box-shadow: 0 0 5px rgba(47, 47, 47, 0.7);
 }
 
+/* Line area styling within the card */
 #lineArea {
   position: relative;
   top: 50;
@@ -110,6 +123,7 @@
   border-right: 1px solid var(--card-main);
 }
 
+/* Styling for selected colour and feeling text */
 #selectedColour,
 #selectedFeeling {
   color: var(--card-main);
@@ -120,10 +134,12 @@
   text-transform: uppercase;
 }
 
+/* Margin adjustment for selected colour text */
 #selectedColour {
   margin-top: 15px;
 }
 
+/* Styling for card title */
 #cardTitle {
   margin-top: 8px;
   font-size: 1.2rem;
@@ -132,12 +148,14 @@
   text-transform: uppercase;
 }
 
+/* Inner message styling within the card */
 #innerMessage {
   margin: 20px 10px;
   color: var(--card-main);
   text-align: center;
 }
 
+/* Quote styling within the card */
 #quote {
   font-size: 1rem;
   font-style: italic;
@@ -145,12 +163,13 @@
   margin: 15px auto;
 }
 
+/* Author styling within the card */
 .author {
   margin-top: 15px;
   text-transform: uppercase;
 }
 
-/* Thank You section */
+/* Thank You section container styling */
 #container3 {
   display: flex;
   align-items: center;
@@ -159,14 +178,17 @@
   display: none;
 }
 
+/* Thank You header styling */
 #thankYouH1 {
   padding: 20px 10px;
 }
 
+/* Thank You section styling */
 #thankYou {
   max-width: 500px;
 }
 
+/* Responsive styling for screen widths 768px and above */
 @media screen and (min-width: 768px) {
   #mood {
     margin-top: 30px;
@@ -194,8 +216,7 @@
     font-size: 1.5rem;
   }
 
-  /* card Style */
-
+  /* Card responsive styling */
   .outerCard {
     min-width: 400px;
     min-height: 250px;
@@ -213,7 +234,6 @@
 
   #lineArea {
     min-width: 300px;
-
     margin-left: 15px;
   }
 
@@ -230,6 +250,7 @@
   #selectedColour {
     top: 20px;
   }
+
   #selectedFeeling {
     top: 25px;
     left: 35px;

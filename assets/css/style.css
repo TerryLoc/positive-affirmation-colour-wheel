@@ -1,7 +1,7 @@
 /* Google font import for Nunito */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* Root variables for global theme colors */
+/* Root variables for global theme colours */
 :root {
   --font-color: #fbf4e6;
   --bg-color: #325570;
