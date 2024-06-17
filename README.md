@@ -276,6 +276,6 @@ This section also allow the user to take a screenshot of the affirmation and col
 
 ### Content
 
-### Media
+Good vibes only! The affirmations and quotes are sourced from API Ninjas, which provides a wide range of positive and motivational messages to inspire users. The affirmations are displayed in a clean, easy-to-read format, making it simple for users to absorb the uplifting content. The affirmations are randomly generated each time the user clicks the "Get Affirmation" button, ensuring a fresh and unique experience with each visit. The quotes are designed to encourage users to embrace positivity
 
 ## Other General Project Advice
