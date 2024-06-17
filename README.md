@@ -33,6 +33,7 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
     <li><a href="#home-page">Home Page</a></li>
     <li><a href="#colour-wheel-area">Colour Wheel Area</a></li>
     <li><a href="#affirmation--screenshot">Affirmation & Screenshot</a></li>
+    <li><a href="#page-404">Page 404</a></li>
   </ul>
 </details>
 
@@ -43,9 +44,9 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
 <details>
   <summary>5. <a href="#testing">Testing</a></summary>
   <ul>
+    <li><a href="#lighthouse-testing">Lighthouse Testing</a></li>
     <li><a href="#manual-testing">Manual Testing</a></li>
     <li><a href="#integration-tests">Integration Tests</a></li>
-    <!-- Add more testing items as needed -->
   </ul>
 </details>
 
@@ -54,7 +55,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#deployment-steps">Deployment Steps</a></li>
     <li><a href="#environment-setup">Environment Setup</a></li>
-    <!-- Add more deployment items as needed -->
   </ul>
 </details>
 
@@ -63,7 +63,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#contributor-1">Contributor 1</a></li>
     <li><a href="#contributor-2">Contributor 2</a></li>
-    <!-- Add more credits as needed -->
   </ul>
 </details>
 
@@ -72,7 +71,6 @@ This Positive Affirmation and Color Wheel app is designed to uplift your mood an
   <ul>
     <li><a href="#author-name">Author Name</a></li>
     <li><a href="#author-bio">Author Bio</a></li>
-    <!-- Add more author items as needed -->
   </ul>
 </details>
 
@@ -231,7 +229,7 @@ This section also allow the user to take a screenshot of the affirmation and col
   </tr>
 </table>
 
-#### [404 PAGE](#404page)
+#### [PAGE 404](#page-404)
 
 On the 404 page the user is greeted with a message that the page they are looking for is not available. The user is encouraged to return to the home page.
 
@@ -428,7 +426,18 @@ function handleMoodClick(button, colourWheel) {
 
   By breaking down the original TWO BIG FUNCTIONS into smaller helper functions, I achieve a more readability, maintainability, and reusable code. The refactored code is easier to understand and debug, and it follows the single responsibility principle, with each function handling a specific task.
 
+  <hr>
 
+### [Lighthouse Testing](#lighthouse-testing)
+
+On the lighthouse testing I received a score of close to 100% on all the pages. This was surprising as I was expecting a lower score because of the movement between containers and the use of the API. I was very happy with the results and I am confident that the site is user friendly and accessible.
+
+| Page         | Size    | Screenshot                                                   | Notes           |
+| ------------ | ------- | ------------------------------------------------------------ | --------------- |
+| Home         | Mobile  | ![screenshot](assets/images/testing-images/home-mobile.png)  | No warnings     |
+| Home         | Desktop | ![screenshot](assets/images/testing-images/home-desktop.png) | 100% all around |
+| Mood section | Mobile  | ![screenshot](assets/images/testing-images/mood-mobile.png)  | No warnings     |
+| Mood section | Desktop | ![screenshot](assets/images/testing-images/mood-desktop.png) | No warnings     |
 
 ## [Manual Testing](#manual-testing)
 
@@ -437,7 +446,18 @@ function handleMoodClick(button, colourWheel) {
   - **Desktop**: Chrome, Brave, Safari
   - **Tablet**: iPad
   - **Mobile**: iPhone 12, Samsung Galaxy s10, Realme GT 2
+  
+  Testing was done on the following features:
 
+| Page                | Button              | Notes                                 | Result   |
+| ------------------- | ------------------- | ------------------------------------- | -------- |
+| Home                | Lets Get Started    | Brings user to mood page              | Pass     |
+| Mood Section        | Six different moods | Activates the wheel & colour function | All Pass |
+| Mood section        | Onwards             | Navigates to Mood card                | Pass     |
+| Affirmation section | Affirmation         | Call API function                     | Pass     |
+| Affirmation section | Screenshot          | Downloads screenshot of card          | Pass     |
+| Thank you           | Home                | Navigates to home page                | Pass     |
+| 404 Page            | Home Page           | Returns user to home page             | Pass     |
 
 
 ### Unfixed Bugs
@@ -451,3 +471,6 @@ function handleMoodClick(button, colourWheel) {
 Good vibes all round! The affirmations come from API Ninjas, which provides a extensive type of nice and motivational messages to inspire clients. Affirmations are displayed in an smooth, uncluttered format that makes it clean for users to acquire uplifting content material. Quotes are randomly generated every time a person clicks the "Get Affirmation" button, ensuring a clean and unique experience with each visit. Designed to inspire users to embrace positivity.
 
 ### Other General Project Advice
+
+
+[def]: 404pag
